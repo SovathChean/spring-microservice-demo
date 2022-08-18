@@ -5,44 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb9bf7c4-3931-4c15-8929-f04c6e0f4975" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service-registry/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/gateway/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/gateway/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/gateway/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/gateway/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/gateway/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/gateway/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/gateway/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/gateway/src/main/java/com/example/gateway/GatewayApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/gateway/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/gateway/src/test/java/com/example/gateway/GatewayApplicationTests.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gateway/src/main/java/com/example/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/java/com/example/gateway/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../postservice/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/gradlew.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../postservice/postservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/PostserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/PostserviceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/userservice.userservice.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/userservice.userservice.test~1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/userservice.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/UserserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/UserserviceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +24,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -106,5 +84,16 @@
       <updated>1660795554081</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
