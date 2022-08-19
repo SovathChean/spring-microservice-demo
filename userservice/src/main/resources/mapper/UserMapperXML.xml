@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.userservice.core.dao.UserDAO">
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        INSERT INTO users (username, phone, password)
+        VALUES (#{username}, #{phone}, #{password});
+    </insert>
+    <select id="findUserById" useCache="true" resultType="com.example.userservice.core.entity.User">
+        Select * From Users Where id=#{userId}
+    </select>
+</mapper>
