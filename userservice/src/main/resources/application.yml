@@ -1,8 +1,8 @@
-server:
-  port: 9091
-
-spring:
-  application:
-    name: USER-SERVICE
-  zipkin:
-    base-url: http://127.0.0.1:9411/
+#server:
+#  port: 9095
+#
+#spring:
+#  application:
+#    name: USER-SERVICE
+#  zipkin:
+#    base-url: http://127.0.0.1:9411/
