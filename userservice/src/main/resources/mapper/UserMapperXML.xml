@@ -7,7 +7,7 @@
         INSERT INTO users (username, phone, password)
         VALUES (#{username}, #{phone}, #{password});
     </insert>
-    <select id="findUserById" useCache="true" resultType="com.example.userservice.core.entity.User">
+    <select id="findUserById" useCache="true" resultType="com.example.userservice.core.dto.UserDTO">
         Select * From Users Where id=#{userId}
     </select>
 </mapper>

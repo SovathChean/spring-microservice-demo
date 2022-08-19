@@ -7,6 +7,7 @@ import com.example.userservice.web.handler.ResponseHandler;
 import com.example.userservice.web.handler.response.ResponseData;
 import com.example.userservice.web.handler.response.ResponseListData;
 import com.example.userservice.web.handler.response.ResponseMessage;
+import com.example.userservice.web.vo.mapper.UserResponseMapper;
 import com.example.userservice.web.vo.response.UserResponseVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -30,18 +31,20 @@ public class UserController {
         return ResponseHandler.responseWithListData(null, HttpStatus.OK, userResponseVO, true);
     }
     @PostMapping
-    public ResponseEntity<ResponseMessage> createUser(@RequestBody UserDTO userDTO)
+    public ResponseEntity<ResponseData<UserResponseVO>> createUser(@RequestBody UserDTO userDTO)
     {
         UserDTO createUser = userService.createUser(userDTO);
+        UserResponseVO userResponseVO = UserResponseMapper.INSTANCE.fromDTO(createUser);
 
-        return ResponseHandler.responseWithMsg("Create User successfully", HttpStatus.CREATED, true);
+        return ResponseHandler.responseWithData("Create User successfully", HttpStatus.CREATED, userResponseVO,true);
     }
     @GetMapping(value="{id}")
-    public ResponseEntity<ResponseData<User>> getUserBy(@PathVariable Integer id)
+    public ResponseEntity<ResponseData<UserResponseVO>> getUserBy(@PathVariable Integer id)
     {
-        User user = userService.getUserById(id);
+        UserDTO user = userService.getUserById(id);
+        UserResponseVO userResponseVO = UserResponseMapper.INSTANCE.fromDTO(user);
 
-        return ResponseHandler.responseWithData(null, HttpStatus.OK, user, true);
+        return ResponseHandler.responseWithData(null, HttpStatus.OK, userResponseVO, true);
     }
 
 }

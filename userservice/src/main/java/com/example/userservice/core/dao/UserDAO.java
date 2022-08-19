@@ -12,5 +12,5 @@ import javax.persistence.GenerationType;
 @Mapper
 public interface UserDAO {
     public int insert(UserDTO userDTO);
-    public User findUserById(Integer userId);
+    public UserDTO findUserById(Integer userId);
 }
