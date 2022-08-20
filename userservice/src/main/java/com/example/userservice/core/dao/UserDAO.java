@@ -1,16 +1,17 @@
 package com.example.userservice.core.dao;
 
 import com.example.userservice.core.dto.UserDTO;
-import com.example.userservice.core.entity.User;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import java.util.List;
 
 @Repository
 @Mapper
 public interface UserDAO {
-    public int insert(UserDTO userDTO);
-    public UserDTO findUserById(Integer userId);
+    int insert(UserDTO userDTO);
+    UserDTO findUserById(Integer userId);
+    List<UserDTO> findListUser();
+    int update(UserDTO userDTO);
+    int deleteById(Integer userId);
 }

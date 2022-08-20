@@ -10,4 +10,13 @@
     <select id="findUserById" useCache="true" resultType="com.example.userservice.core.dto.UserDTO">
         Select * From Users Where id=#{userId}
     </select>
+    <select id="findListUser" useCache="true" resultType="com.example.userservice.core.dto.UserDTO">
+        Select * From Users
+    </select>
+    <update id="update" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        UPDATE users SET username=#{username}, phone=#{phone}, password=#{password} WHERE id=#{id};
+    </update>
+    <delete id="deleteById" flushCache="true">
+        DELETE FROM users WHERE id=#{userId};
+    </delete>
 </mapper>

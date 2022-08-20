@@ -1,10 +1,7 @@
 package com.example.userservice.core.entity;
 
-import lombok.Data;
-
 import javax.persistence.*;
 
-@Data
 @Entity
 @Table(name="Users")
 public class User {
