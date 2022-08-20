@@ -1,18 +1,23 @@
 package com.example.userservice.web.controller;
 
 import com.example.userservice.core.dto.UserDTO;
+import com.example.userservice.core.mapper.UserMapper;
 import com.example.userservice.core.service.UserService;
 import com.example.userservice.web.handler.ResponseHandler;
 import com.example.userservice.web.handler.response.ResponseData;
 import com.example.userservice.web.handler.response.ResponseListData;
 import com.example.userservice.web.handler.response.ResponseMessage;
 import com.example.userservice.web.vo.mapper.UserResponseMapper;
+import com.example.userservice.web.vo.request.UserCreationRequest;
+import com.example.userservice.web.vo.request.UserUpdatedRequest;
 import com.example.userservice.web.vo.response.UserResponseVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -29,8 +34,8 @@ public class UserController {
     }
 
     @RequestMapping(value="/api/users/created", method = RequestMethod.POST)
-    public ResponseEntity<ResponseData<UserResponseVO>> createUser(@RequestBody UserDTO userDTO) {
-        UserDTO createUser = userService.createUser(userDTO);
+    public ResponseEntity<ResponseData<UserResponseVO>> createUser(@Validated  @RequestBody UserCreationRequest creationRequest) {
+        UserDTO createUser = userService.createUser(UserMapper.INSTANCE.fromUserCreated(creationRequest));
         UserResponseVO userResponseVO = UserResponseMapper.INSTANCE.fromDTO(createUser);
 
         return ResponseHandler.responseWithData("Create User successfully", HttpStatus.CREATED, userResponseVO, true);
@@ -45,9 +50,9 @@ public class UserController {
     }
 
     @RequestMapping(value = "/api/users/updated", method = RequestMethod.POST)
-    public ResponseEntity<ResponseData<UserResponseVO>> updateUser(@RequestBody UserDTO userDTO)
+    public ResponseEntity<ResponseData<UserResponseVO>> updateUser(@Valid @RequestBody UserUpdatedRequest userUpdatedRequest)
     {
-        UserDTO updateUser = userService.updateUser(userDTO);
+        UserDTO updateUser = userService.updateUser(UserMapper.INSTANCE.fromUserUpdated(userUpdatedRequest));
         UserResponseVO userResponseVO = UserResponseMapper.INSTANCE.fromDTO(updateUser);
 
         return ResponseHandler.responseWithData("Update user successfully", HttpStatus.OK, userResponseVO, true);
