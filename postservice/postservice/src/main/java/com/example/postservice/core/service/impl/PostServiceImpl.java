@@ -6,6 +6,7 @@ import com.example.postservice.core.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -15,12 +16,16 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public PostDTO createPost(PostDTO postDTO) {
+        postDTO.setCreatedAt(LocalDateTime.now());
         Integer createPost = postDAO.insert(postDTO);
         return postDAO.findById(postDTO.getId());
     }
 
     @Override
     public PostDTO updatePost(PostDTO postDTO) {
+        PostDTO getPost = postDAO.findById(postDTO.getId());
+        postDTO.setCreatedAt(getPost.getCreatedAt());
+        postDTO.setUpdatedAt(LocalDateTime.now());
         Integer updatePost = postDAO.update(postDTO);
         return postDAO.findById(postDTO.getId());
     }

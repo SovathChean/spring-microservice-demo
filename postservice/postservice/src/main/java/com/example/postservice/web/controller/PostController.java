@@ -55,7 +55,7 @@ public class PostController {
 
         return ResponseHandler.responseWithData("Update user successfully", HttpStatus.OK, postResponseVO, true);
     }
-    @RequestMapping(value = "/api/users/deleted/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/api/posts/deleted/{id}", method = RequestMethod.GET)
     public ResponseEntity<ResponseMessage> deleteUser(@PathVariable Integer id)
     {
         Integer deletePost = postService.deletePost(id);
