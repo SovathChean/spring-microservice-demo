@@ -4,11 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@ResponseStatus(value=HttpStatus.BAD_REQUEST)
 public class BusinessException extends RuntimeException {
-    private String message;
-    private HttpStatus status;
+    public BusinessException(String message)
+    {
+        super(message);
+    }
+
 }

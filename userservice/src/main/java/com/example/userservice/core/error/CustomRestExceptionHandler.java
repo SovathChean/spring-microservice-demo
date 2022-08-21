@@ -2,22 +2,21 @@ package com.example.userservice.core.error;
 
 import com.example.userservice.core.exception.BusinessException;
 import com.example.userservice.web.handler.response.ResponseError;
-import com.example.userservice.web.handler.response.ResponseMessage;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@ControllerAdvice
+@RestControllerAdvice
 public class CustomRestExceptionHandler extends ResponseEntityExceptionHandler {
 
     @Override
@@ -38,11 +37,11 @@ public class CustomRestExceptionHandler extends ResponseEntityExceptionHandler {
                 ex, apiError, headers, apiError.getStatus(), request);
     }
 
-    @ExceptionHandler(BusinessException.class)
+    @ExceptionHandler(value = {BusinessException.class})
     protected ResponseEntity<Object> handleBusinessException(BusinessException ex, HttpHeaders headers, WebRequest request)
     {
         ResponseError apiError =
-                new ResponseError(ex.getStatus(), ex.getMessage(), null);
+                new ResponseError(HttpStatus.BAD_REQUEST, ex.getMessage(), null);
 
         return handleExceptionInternal(
                 ex, apiError, headers, apiError.getStatus(), request);

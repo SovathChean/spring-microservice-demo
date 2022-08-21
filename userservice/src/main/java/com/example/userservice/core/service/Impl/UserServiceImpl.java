@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService {
     public UserDTO createUser(UserDTO userDTO) {
         Integer userCreation = userDAO.insert(userDTO);
         if(userCreation == 0)
-            throw new BusinessException( "User creation error", HttpStatus.BAD_REQUEST);
+            throw new BusinessException( "User creation error");
 
         return userDAO.findUserById(userDTO.getId());
     }
@@ -37,7 +37,7 @@ public class UserServiceImpl implements UserService {
     public UserDTO updateUser(UserDTO userDTO) {
         Integer updateUser = userDAO.update(userDTO);
         if(updateUser == 0)
-            throw new BusinessException( "User creation error", HttpStatus.BAD_REQUEST);
+            throw new BusinessException( "User creation error");
         return userDAO.findUserById(userDTO.getId());
     }
 
@@ -45,7 +45,7 @@ public class UserServiceImpl implements UserService {
     public Integer deleteUser(Integer userId) {
         Integer deleteUser = userDAO.deleteById(userId);
         if(deleteUser == 0)
-            throw new BusinessException( "User creation error", HttpStatus.BAD_REQUEST);
+            throw new BusinessException( "User creation error");
         return deleteUser;
     }
 

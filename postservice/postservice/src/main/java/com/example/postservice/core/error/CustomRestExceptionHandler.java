@@ -1,5 +1,6 @@
 package com.example.postservice.core.error;
 
+import com.example.postservice.core.exception.BusinessException;
 import com.example.postservice.web.handler.response.ResponseError;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -8,13 +9,15 @@ import org.springframework.validation.FieldError;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@ControllerAdvice
+@RestControllerAdvice
 public class CustomRestExceptionHandler extends ResponseEntityExceptionHandler {
     @Override
     protected ResponseEntity<Object> handleMethodArgumentNotValid(
@@ -30,6 +33,15 @@ public class CustomRestExceptionHandler extends ResponseEntityExceptionHandler {
 
         ResponseError apiError =
                 new ResponseError(HttpStatus.BAD_REQUEST, ex.getLocalizedMessage(), errors);
+        return handleExceptionInternal(
+                ex, apiError, headers, apiError.getStatus(), request);
+    }
+    @ExceptionHandler(value = {BusinessException.class})
+    protected ResponseEntity<Object> handleBusinessException(BusinessException ex, HttpHeaders headers, WebRequest request)
+    {
+        ResponseError apiError =
+                new ResponseError(HttpStatus.BAD_REQUEST, ex.getMessage(), null);
+
         return handleExceptionInternal(
                 ex, apiError, headers, apiError.getStatus(), request);
     }
