@@ -1,17 +1,14 @@
-package com.example.userservice.web.handler.response;
+package com.example.userservice.core.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.http.HttpStatus;
 
-import java.util.List;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ResponseError {
-    private HttpStatus status;
+public class BusinessException extends RuntimeException {
     private String message;
-    private List<String> error;
+    private HttpStatus status;
 }
