@@ -5,12 +5,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserUpdatedRequest {
-    @NotBlank(message = "id is required.")
+    @NotNull(message = "id is required.")
     private Integer id;
     @NotBlank
     private String username;

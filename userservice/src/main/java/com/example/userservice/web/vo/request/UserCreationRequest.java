@@ -1,6 +1,5 @@
 package com.example.userservice.web.vo.request;
 
-import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

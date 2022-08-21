@@ -17,7 +17,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -50,7 +49,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/api/users/updated", method = RequestMethod.POST)
-    public ResponseEntity<ResponseData<UserResponseVO>> updateUser(@Valid @RequestBody UserUpdatedRequest userUpdatedRequest)
+    public ResponseEntity<ResponseData<UserResponseVO>> updateUser(@Validated @RequestBody UserUpdatedRequest userUpdatedRequest)
     {
         UserDTO updateUser = userService.updateUser(UserMapper.INSTANCE.fromUserUpdated(userUpdatedRequest));
         UserResponseVO userResponseVO = UserResponseMapper.INSTANCE.fromDTO(updateUser);
