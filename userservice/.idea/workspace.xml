@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb9bf7c4-3931-4c15-8929-f04c6e0f4975" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/PostserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/PostserviceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/dto/PostDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/dto/PostDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/mapper/PostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/mapper/PostMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/service/impl/PostServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/web/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/web/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/resources/mapper/PostMapperXML.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/resources/mapper/PostMapperXML.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bb9bf7c4-3931-4c15-8929-f04c6e0f4975" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
