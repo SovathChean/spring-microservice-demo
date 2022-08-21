@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.postservice.core.dao.PostDAO">
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        INSERT INTO posts (title, descrition, userId, createdAt, updatedAt)
+        VALUES (#{title}, #{description}, #{userId}, #{createdAt}, #{updatedAt});
+    </insert>
+    <update id="update" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        UPDATE posts SET title=#{title}, description=#{description}, userId=#{userId}, createdAt=#{createdAt}, updatedAt=#{updatedAt}
+        WHERE id=#{id}
+    </update>
+    <delete id="delete" flushCache="true">
+        DELETE  FROM  posts WHERE id=#{postId}
+    </delete>
+    <select id="findListPost" flushCache="true" resultType="com.example.postservice.core.dto.PostDTO">
+        SELECT * FROM posts
+    </select>
+    <select id="findById" flushCache="true" resultType="com.example.postservice.core.dto.PostDTO">
+        SELECT  * FROM posts WHERE  id=#{postId}
+    </select>
+
+</mapper>
