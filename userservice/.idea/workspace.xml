@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb9bf7c4-3931-4c15-8929-f04c6e0f4975" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/error/CustomRestExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/error/CustomRestExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/service/impl/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/error/CustomRestExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/error/CustomRestExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/exception/BusinessException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

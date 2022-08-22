@@ -2,6 +2,7 @@ package com.example.userservice.core.error;
 
 import com.example.userservice.core.exception.BusinessException;
 import com.example.userservice.web.handler.response.ResponseError;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestControllerAdvice
+@Slf4j
 public class CustomRestExceptionHandler extends ResponseEntityExceptionHandler {
 
     @Override
@@ -30,7 +32,7 @@ public class CustomRestExceptionHandler extends ResponseEntityExceptionHandler {
         for (ObjectError error : ex.getBindingResult().getGlobalErrors()) {
             errors.add(error.getObjectName() + ": " + error.getDefaultMessage());
         }
-
+        log.error("Validation log: {}", ex.getLocalizedMessage());
         ResponseError apiError =
                 new ResponseError(HttpStatus.BAD_REQUEST, ex.getLocalizedMessage(), errors);
         return handleExceptionInternal(
@@ -42,7 +44,7 @@ public class CustomRestExceptionHandler extends ResponseEntityExceptionHandler {
     {
         ResponseError apiError =
                 new ResponseError(HttpStatus.BAD_REQUEST, ex.getMessage(), null);
-
+        log.error("BusinessException log: {}", ex.getLocalizedMessage());
         return handleExceptionInternal(
                 ex, apiError, headers, apiError.getStatus(), request);
     }
