@@ -7442,3 +7442,472 @@ Identify and stop the process that's listening on port 9091 or configure this ap
 2022-08-22 10:41:01,601 [DiscoveryClient-HeartbeatExecutor-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091 - Re-registering apps/USER-SERVICE
 2022-08-22 10:41:01,605 [DiscoveryClient-HeartbeatExecutor-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091: registering service...
 2022-08-22 10:41:01,634 [DiscoveryClient-HeartbeatExecutor-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091 - registration status: 204
+2022-08-22 10:44:00,401 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:46:00,873 [main] INFO  c.e.userservice.UserserviceApplication   :  Starting UserserviceApplication using Java 17.0.4 on 9neals-MacBook-Pro.local with PID 18523 (/Users/9neal/Desktop/backend/spring-boot/spring-microservice-demo/userservice/build/classes/java/main started by 9neal in /Users/9neal/Desktop/backend/spring-boot/spring-microservice-demo/userservice)
+2022-08-22 10:46:00,876 [main] INFO  c.e.userservice.UserserviceApplication   :  No active profile set, falling back to 1 default profile: "default"
+2022-08-22 10:46:01,508 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate :  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 10:46:01,528 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate :  Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2022-08-22 10:46:01,842 [main] INFO  o.s.cloud.context.scope.GenericScope     :  BeanFactory id=9846acea-3d36-3546-9861-3cb19dcafd50
+2022-08-22 10:46:02,567 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  :  Tomcat initialized with port(s): 9091 (http)
+2022-08-22 10:46:02,575 [main] INFO  org.apache.catalina.core.StandardService :  Starting service [Tomcat]
+2022-08-22 10:46:02,576 [main] INFO  org.apache.catalina.core.StandardEngine  :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-22 10:46:02,675 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       :  Initializing Spring embedded WebApplicationContext
+2022-08-22 10:46:02,675 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext :  Root WebApplicationContext: initialization completed in 1762 ms
+2022-08-22 10:46:02,717 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Starting...
+2022-08-22 10:46:02,904 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Start completed.
+2022-08-22 10:46:02,917 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration    :  H2 console available at '/console'. Database available at 'jdbc:h2:mem:testdb'
+2022-08-22 10:46:03,320 [main] INFO  o.hibernate.jpa.internal.util.LogHelper  :  HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 10:46:03,370 [main] INFO  org.hibernate.Version                    :  HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 10:46:03,540 [main] INFO  org.hibernate.annotations.common.Version :  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 10:46:03,647 [main] INFO  org.hibernate.dialect.Dialect            :  HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-22 10:46:04,115 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator       :  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 10:46:04,124 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean :  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 10:46:04,438 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration :  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-22 10:46:05,058 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration :  Eureka HTTP Client uses RestTemplate.
+2022-08-22 10:46:05,208 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-22 10:46:05,276 [main] INFO  o.s.c.netflix.eureka.InstanceInfoFactory :  Setting initial instance status as: STARTING
+2022-08-22 10:46:05,341 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Initializing Eureka in region us-east-1
+2022-08-22 10:46:05,344 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:46:05,361 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Disable delta property : false
+2022-08-22 10:46:05,361 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Single vip registry refresh property : null
+2022-08-22 10:46:05,361 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Force full registry fetch : false
+2022-08-22 10:46:05,361 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Application is null : false
+2022-08-22 10:46:05,361 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Registered Applications size is zero : true
+2022-08-22 10:46:05,361 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Application version is -1: true
+2022-08-22 10:46:05,361 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Getting all instance registry info from the eureka server
+2022-08-22 10:46:05,645 [main] INFO  com.netflix.discovery.DiscoveryClient    :  The response status is 200
+2022-08-22 10:46:05,649 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Starting heartbeat executor: renew interval is: 30
+2022-08-22 10:46:05,652 [main] INFO  c.n.discovery.InstanceInfoReplicator     :  InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-22 10:46:05,657 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Discovery Client initialized at timestamp 1661139965656 with initial instances count: 3
+2022-08-22 10:46:05,667 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry        :  Registering application USER-SERVICE with eureka with status UP
+2022-08-22 10:46:05,668 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Saw local status change event StatusChangeEvent [timestamp=1661139965668, current=UP, previous=STARTING]
+2022-08-22 10:46:05,669 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091: registering service...
+2022-08-22 10:46:05,675 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext :  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9091 is already in use
+2022-08-22 10:46:05,678 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean :  Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 10:46:05,679 [main] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl :  HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-08-22 10:46:05,705 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091 - registration status: 204
+2022-08-22 10:46:06,687 [main] WARN  z.r.AsyncReporter$BoundedAsyncReporter   :  Timed out waiting for in-flight spans to send
+2022-08-22 10:46:06,689 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Shutdown initiated...
+2022-08-22 10:46:06,692 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Shutdown completed.
+2022-08-22 10:46:06,693 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Shutting down DiscoveryClient ...
+2022-08-22 10:46:09,699 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Unregistering ...
+2022-08-22 10:46:09,705 [main] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091 - deregister  status: 200
+2022-08-22 10:46:09,709 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Completed shut down of DiscoveryClient
+2022-08-22 10:46:09,710 [main] INFO  org.apache.catalina.core.StandardService :  Stopping service [Tomcat]
+2022-08-22 10:46:09,728 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener :  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-22 10:46:09,751 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter   :  
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9091 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9091 or configure this application to listen on another port.
+
+2022-08-22 10:46:09,753 [Thread-3] INFO  o.s.c.s.a.z.ZipkinAutoConfiguration      :  Flushing remaining spans on shutdown
+2022-08-22 10:46:18,420 [http-nio-9091-exec-8] INFO  c.e.u.core.service.Impl.UserServiceImpl  :  Find UserById:
+2022-08-22 10:46:18,424 [http-nio-9091-exec-8] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  ==>  Preparing: Select * From Users Where id=?
+2022-08-22 10:46:18,431 [http-nio-9091-exec-8] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  ==> Parameters: 1(Integer)
+2022-08-22 10:46:18,439 [http-nio-9091-exec-8] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  <==      Total: 0
+2022-08-22 10:46:18,587 [http-nio-9091-exec-9] DEBUG c.e.userservice.core.dao.UserDAO.update  :  ==>  Preparing: UPDATE users SET username=?, phone=?, password=? WHERE id=?;
+2022-08-22 10:46:18,589 [http-nio-9091-exec-9] DEBUG c.e.userservice.core.dao.UserDAO.update  :  ==> Parameters: updated_username(String), 092899999(String), password(String), 1(Integer)
+2022-08-22 10:46:18,590 [http-nio-9091-exec-9] DEBUG c.e.userservice.core.dao.UserDAO.update  :  <==    Updates: 0
+2022-08-22 10:46:18,628 [http-nio-9091-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver :  Failure in @ExceptionHandler com.example.userservice.core.error.CustomRestExceptionHandler#handleBusinessException(BusinessException, HttpHeaders, WebRequest)
+java.lang.IllegalStateException: Could not resolve parameter [1] in protected org.springframework.http.ResponseEntity<java.lang.Object> com.example.userservice.core.error.CustomRestExceptionHandler.handleBusinessException(com.example.userservice.core.exception.BusinessException,org.springframework.http.HttpHeaders,org.springframework.web.context.request.WebRequest): No suitable resolver
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:176)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:428)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:75)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:142)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1330)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1141)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1087)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:68)
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.TraceWebServletConfiguration$LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:131)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.springframework.cloud.sleuth.instrument.web.tomcat.TraceValve.invoke(TraceValve.java:103)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-08-22 10:46:18,714 [http-nio-9091-exec-10] DEBUG c.e.u.core.dao.UserDAO.deleteById        :  ==>  Preparing: DELETE FROM users WHERE id=?;
+2022-08-22 10:46:18,714 [http-nio-9091-exec-10] DEBUG c.e.u.core.dao.UserDAO.deleteById        :  ==> Parameters: 1(Integer)
+2022-08-22 10:46:18,715 [http-nio-9091-exec-10] DEBUG c.e.u.core.dao.UserDAO.deleteById        :  <==    Updates: 0
+2022-08-22 10:46:18,716 [http-nio-9091-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver :  Failure in @ExceptionHandler com.example.userservice.core.error.CustomRestExceptionHandler#handleBusinessException(BusinessException, HttpHeaders, WebRequest)
+java.lang.IllegalStateException: Could not resolve parameter [1] in protected org.springframework.http.ResponseEntity<java.lang.Object> com.example.userservice.core.error.CustomRestExceptionHandler.handleBusinessException(com.example.userservice.core.exception.BusinessException,org.springframework.http.HttpHeaders,org.springframework.web.context.request.WebRequest): No suitable resolver
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:176)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:428)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:75)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:142)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1330)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1141)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1087)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:68)
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.TraceWebServletConfiguration$LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:131)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.springframework.cloud.sleuth.instrument.web.tomcat.TraceValve.invoke(TraceValve.java:103)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-08-22 10:46:18,741 [http-nio-9091-exec-1] INFO  c.e.u.core.service.Impl.UserServiceImpl  :  Find ListByUsers: {}
+2022-08-22 10:46:18,742 [http-nio-9091-exec-1] DEBUG c.e.u.core.dao.UserDAO.findListUser      :  ==>  Preparing: Select * From Users
+2022-08-22 10:46:18,742 [http-nio-9091-exec-1] DEBUG c.e.u.core.dao.UserDAO.findListUser      :  ==> Parameters: 
+2022-08-22 10:46:18,744 [http-nio-9091-exec-1] DEBUG c.e.u.core.dao.UserDAO.findListUser      :  <==      Total: 11
+2022-08-22 10:46:18,840 [http-nio-9091-exec-2] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:46:18,840 [http-nio-9091-exec-2] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: useradmin(String), 092899999(String), $2a$10$EWims1T35Ov/JwLilkc91.Tg8s.iw64jAdwBbRkpWf4GtMTv.YpgC(String)
+2022-08-22 10:46:18,841 [http-nio-9091-exec-2] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:46:18,841 [http-nio-9091-exec-2] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  ==>  Preparing: Select * From Users Where id=?
+2022-08-22 10:46:18,841 [http-nio-9091-exec-2] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  ==> Parameters: 13(Integer)
+2022-08-22 10:46:18,842 [http-nio-9091-exec-2] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  <==      Total: 1
+2022-08-22 10:46:18,842 [http-nio-9091-exec-2] INFO  c.e.u.core.service.Impl.UserServiceImpl  :  User created successfully: UserDTO(id=13, username=useradmin, phone=092899999, password=$2a$10$EWims1T35Ov/JwLilkc91.Tg8s.iw64jAdwBbRkpWf4GtMTv.YpgC)
+2022-08-22 10:46:27,234 [Thread-3] INFO  o.s.c.s.a.z.ZipkinAutoConfiguration      :  Flushing remaining spans on shutdown
+2022-08-22 10:46:27,251 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry        :  Unregistering application USER-SERVICE with eureka with status DOWN
+2022-08-22 10:46:27,251 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient    :  Saw local status change event StatusChangeEvent [timestamp=1661139987251, current=DOWN, previous=UP]
+2022-08-22 10:46:27,251 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091: registering service...
+2022-08-22 10:46:27,268 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091 - registration status: 204
+2022-08-22 10:46:27,298 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean :  Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 10:46:27,309 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl :  HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-08-22 10:46:27,844 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Shutdown initiated...
+2022-08-22 10:46:27,849 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Shutdown completed.
+2022-08-22 10:46:27,855 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient    :  Shutting down DiscoveryClient ...
+2022-08-22 10:46:30,859 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient    :  Unregistering ...
+2022-08-22 10:46:30,866 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091 - deregister  status: 200
+2022-08-22 10:46:30,872 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient    :  Completed shut down of DiscoveryClient
+2022-08-22 10:46:34,118 [main] INFO  c.e.userservice.UserserviceApplication   :  Starting UserserviceApplication using Java 17.0.4 on 9neals-MacBook-Pro.local with PID 18539 (/Users/9neal/Desktop/backend/spring-boot/spring-microservice-demo/userservice/build/classes/java/main started by 9neal in /Users/9neal/Desktop/backend/spring-boot/spring-microservice-demo/userservice)
+2022-08-22 10:46:34,120 [main] INFO  c.e.userservice.UserserviceApplication   :  No active profile set, falling back to 1 default profile: "default"
+2022-08-22 10:46:34,764 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate :  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 10:46:34,776 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate :  Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2022-08-22 10:46:35,019 [main] INFO  o.s.cloud.context.scope.GenericScope     :  BeanFactory id=882c63ea-8a5b-345f-9904-83652757b12d
+2022-08-22 10:46:35,654 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  :  Tomcat initialized with port(s): 9091 (http)
+2022-08-22 10:46:35,662 [main] INFO  org.apache.catalina.core.StandardService :  Starting service [Tomcat]
+2022-08-22 10:46:35,663 [main] INFO  org.apache.catalina.core.StandardEngine  :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-22 10:46:35,763 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       :  Initializing Spring embedded WebApplicationContext
+2022-08-22 10:46:35,763 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext :  Root WebApplicationContext: initialization completed in 1600 ms
+2022-08-22 10:46:35,801 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Starting...
+2022-08-22 10:46:35,999 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Start completed.
+2022-08-22 10:46:36,009 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration    :  H2 console available at '/console'. Database available at 'jdbc:h2:mem:testdb'
+2022-08-22 10:46:36,323 [main] INFO  o.hibernate.jpa.internal.util.LogHelper  :  HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 10:46:36,362 [main] INFO  org.hibernate.Version                    :  HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 10:46:36,488 [main] INFO  org.hibernate.annotations.common.Version :  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 10:46:36,594 [main] INFO  org.hibernate.dialect.Dialect            :  HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-22 10:46:36,999 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator       :  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 10:46:37,005 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean :  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 10:46:37,268 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration :  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-22 10:46:37,922 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration :  Eureka HTTP Client uses RestTemplate.
+2022-08-22 10:46:38,035 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-22 10:46:38,112 [main] INFO  o.s.c.netflix.eureka.InstanceInfoFactory :  Setting initial instance status as: STARTING
+2022-08-22 10:46:38,144 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Initializing Eureka in region us-east-1
+2022-08-22 10:46:38,148 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:46:38,166 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Disable delta property : false
+2022-08-22 10:46:38,167 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Single vip registry refresh property : null
+2022-08-22 10:46:38,167 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Force full registry fetch : false
+2022-08-22 10:46:38,167 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Application is null : false
+2022-08-22 10:46:38,167 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Registered Applications size is zero : true
+2022-08-22 10:46:38,167 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Application version is -1: true
+2022-08-22 10:46:38,167 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Getting all instance registry info from the eureka server
+2022-08-22 10:46:38,392 [main] INFO  com.netflix.discovery.DiscoveryClient    :  The response status is 200
+2022-08-22 10:46:38,394 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Starting heartbeat executor: renew interval is: 30
+2022-08-22 10:46:38,396 [main] INFO  c.n.discovery.InstanceInfoReplicator     :  InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-22 10:46:38,400 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Discovery Client initialized at timestamp 1661139998400 with initial instances count: 3
+2022-08-22 10:46:38,408 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry        :  Registering application USER-SERVICE with eureka with status UP
+2022-08-22 10:46:38,409 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Saw local status change event StatusChangeEvent [timestamp=1661139998409, current=UP, previous=STARTING]
+2022-08-22 10:46:38,410 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091: registering service...
+2022-08-22 10:46:38,426 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  :  Tomcat started on port(s): 9091 (http) with context path ''
+2022-08-22 10:46:38,426 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration :  Updating port to 9091
+2022-08-22 10:46:38,442 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091 - registration status: 204
+2022-08-22 10:46:38,447 [main] INFO  c.e.userservice.UserserviceApplication   :  Started UserserviceApplication in 4.739 seconds (JVM running for 5.275)
+2022-08-22 10:46:38,460 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:46:38,478 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: useradmin(String), +85592707070(String), $2a$10$U7plwQv8BuypSJIO9wAw5OFQH6ULm8BvX4Rv3TFjZxWY5V99HlCmC(String)
+2022-08-22 10:46:38,483 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:46:38,487 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:46:38,487 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name0(String), 0928778990(String), $2a$10$U7plwQv8BuypSJIO9wAw5OFQH6ULm8BvX4Rv3TFjZxWY5V99HlCmC(String)
+2022-08-22 10:46:38,487 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:46:38,487 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:46:38,487 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name1(String), 0928778991(String), $2a$10$U7plwQv8BuypSJIO9wAw5OFQH6ULm8BvX4Rv3TFjZxWY5V99HlCmC(String)
+2022-08-22 10:46:38,488 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:46:38,488 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:46:38,488 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name2(String), 0928778992(String), $2a$10$U7plwQv8BuypSJIO9wAw5OFQH6ULm8BvX4Rv3TFjZxWY5V99HlCmC(String)
+2022-08-22 10:46:38,488 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:46:38,488 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:46:38,489 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name3(String), 0928778993(String), $2a$10$U7plwQv8BuypSJIO9wAw5OFQH6ULm8BvX4Rv3TFjZxWY5V99HlCmC(String)
+2022-08-22 10:46:38,489 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:46:38,489 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:46:38,489 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name4(String), 0928778994(String), $2a$10$U7plwQv8BuypSJIO9wAw5OFQH6ULm8BvX4Rv3TFjZxWY5V99HlCmC(String)
+2022-08-22 10:46:38,490 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:46:38,490 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:46:38,490 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name5(String), 0928778995(String), $2a$10$U7plwQv8BuypSJIO9wAw5OFQH6ULm8BvX4Rv3TFjZxWY5V99HlCmC(String)
+2022-08-22 10:46:38,490 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:46:38,491 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:46:38,491 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name6(String), 0928778996(String), $2a$10$U7plwQv8BuypSJIO9wAw5OFQH6ULm8BvX4Rv3TFjZxWY5V99HlCmC(String)
+2022-08-22 10:46:38,491 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:46:38,491 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:46:38,491 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name7(String), 0928778997(String), $2a$10$U7plwQv8BuypSJIO9wAw5OFQH6ULm8BvX4Rv3TFjZxWY5V99HlCmC(String)
+2022-08-22 10:46:38,492 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:46:38,492 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:46:38,492 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name8(String), 0928778998(String), $2a$10$U7plwQv8BuypSJIO9wAw5OFQH6ULm8BvX4Rv3TFjZxWY5V99HlCmC(String)
+2022-08-22 10:46:38,492 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:46:38,492 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:46:38,493 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name9(String), 0928778999(String), $2a$10$U7plwQv8BuypSJIO9wAw5OFQH6ULm8BvX4Rv3TFjZxWY5V99HlCmC(String)
+2022-08-22 10:46:38,493 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:48:01,835 [main] INFO  c.e.userservice.UserserviceApplication   :  Starting UserserviceApplication using Java 17.0.4 on 9neals-MacBook-Pro.local with PID 18591 (/Users/9neal/Desktop/backend/spring-boot/spring-microservice-demo/userservice/build/classes/java/main started by 9neal in /Users/9neal/Desktop/backend/spring-boot/spring-microservice-demo/userservice)
+2022-08-22 10:48:01,839 [main] INFO  c.e.userservice.UserserviceApplication   :  No active profile set, falling back to 1 default profile: "default"
+2022-08-22 10:48:02,453 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate :  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 10:48:02,469 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate :  Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2022-08-22 10:48:02,750 [main] INFO  o.s.cloud.context.scope.GenericScope     :  BeanFactory id=9846acea-3d36-3546-9861-3cb19dcafd50
+2022-08-22 10:48:03,442 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  :  Tomcat initialized with port(s): 9091 (http)
+2022-08-22 10:48:03,451 [main] INFO  org.apache.catalina.core.StandardService :  Starting service [Tomcat]
+2022-08-22 10:48:03,452 [main] INFO  org.apache.catalina.core.StandardEngine  :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-22 10:48:03,581 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       :  Initializing Spring embedded WebApplicationContext
+2022-08-22 10:48:03,584 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext :  Root WebApplicationContext: initialization completed in 1708 ms
+2022-08-22 10:48:03,621 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Starting...
+2022-08-22 10:48:03,786 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Start completed.
+2022-08-22 10:48:03,795 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration    :  H2 console available at '/console'. Database available at 'jdbc:h2:mem:testdb'
+2022-08-22 10:48:04,206 [main] INFO  o.hibernate.jpa.internal.util.LogHelper  :  HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 10:48:04,252 [main] INFO  org.hibernate.Version                    :  HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 10:48:04,384 [main] INFO  org.hibernate.annotations.common.Version :  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 10:48:04,489 [main] INFO  org.hibernate.dialect.Dialect            :  HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-22 10:48:04,938 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator       :  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 10:48:04,944 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean :  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 10:48:05,253 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration :  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-22 10:48:05,757 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration :  Eureka HTTP Client uses RestTemplate.
+2022-08-22 10:48:05,879 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-22 10:48:05,937 [main] INFO  o.s.c.netflix.eureka.InstanceInfoFactory :  Setting initial instance status as: STARTING
+2022-08-22 10:48:05,995 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Initializing Eureka in region us-east-1
+2022-08-22 10:48:05,998 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:48:06,014 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Disable delta property : false
+2022-08-22 10:48:06,015 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Single vip registry refresh property : null
+2022-08-22 10:48:06,015 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Force full registry fetch : false
+2022-08-22 10:48:06,015 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Application is null : false
+2022-08-22 10:48:06,015 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Registered Applications size is zero : true
+2022-08-22 10:48:06,015 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Application version is -1: true
+2022-08-22 10:48:06,015 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Getting all instance registry info from the eureka server
+2022-08-22 10:48:06,290 [main] INFO  com.netflix.discovery.DiscoveryClient    :  The response status is 200
+2022-08-22 10:48:06,292 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Starting heartbeat executor: renew interval is: 30
+2022-08-22 10:48:06,293 [main] INFO  c.n.discovery.InstanceInfoReplicator     :  InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-22 10:48:06,296 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Discovery Client initialized at timestamp 1661140086296 with initial instances count: 3
+2022-08-22 10:48:06,304 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry        :  Registering application USER-SERVICE with eureka with status UP
+2022-08-22 10:48:06,304 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Saw local status change event StatusChangeEvent [timestamp=1661140086304, current=UP, previous=STARTING]
+2022-08-22 10:48:06,305 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091: registering service...
+2022-08-22 10:48:06,309 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext :  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9091 is already in use
+2022-08-22 10:48:06,312 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean :  Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 10:48:06,312 [main] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl :  HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-08-22 10:48:06,333 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091 - registration status: 204
+2022-08-22 10:48:07,320 [main] WARN  z.r.AsyncReporter$BoundedAsyncReporter   :  Timed out waiting for in-flight spans to send
+2022-08-22 10:48:07,322 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Shutdown initiated...
+2022-08-22 10:48:07,325 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Shutdown completed.
+2022-08-22 10:48:07,325 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Shutting down DiscoveryClient ...
+2022-08-22 10:48:10,328 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Unregistering ...
+2022-08-22 10:48:10,334 [main] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091 - deregister  status: 200
+2022-08-22 10:48:10,339 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Completed shut down of DiscoveryClient
+2022-08-22 10:48:10,341 [main] INFO  org.apache.catalina.core.StandardService :  Stopping service [Tomcat]
+2022-08-22 10:48:10,356 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener :  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-22 10:48:10,373 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter   :  
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9091 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9091 or configure this application to listen on another port.
+
+2022-08-22 10:48:10,374 [Thread-3] INFO  o.s.c.s.a.z.ZipkinAutoConfiguration      :  Flushing remaining spans on shutdown
+2022-08-22 10:48:38,432 [DiscoveryClient-HeartbeatExecutor-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091 - Re-registering apps/USER-SERVICE
+2022-08-22 10:48:38,436 [DiscoveryClient-HeartbeatExecutor-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091: registering service...
+2022-08-22 10:48:38,443 [DiscoveryClient-HeartbeatExecutor-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091 - registration status: 204
+2022-08-22 10:48:53,860 [main] INFO  c.e.userservice.UserserviceApplication   :  Starting UserserviceApplication using Java 17.0.4 on 9neals-MacBook-Pro.local with PID 18608 (/Users/9neal/Desktop/backend/spring-boot/spring-microservice-demo/userservice/build/classes/java/main started by 9neal in /Users/9neal/Desktop/backend/spring-boot/spring-microservice-demo/userservice)
+2022-08-22 10:48:53,862 [main] INFO  c.e.userservice.UserserviceApplication   :  No active profile set, falling back to 1 default profile: "default"
+2022-08-22 10:48:54,464 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate :  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 10:48:54,484 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate :  Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2022-08-22 10:48:54,769 [main] INFO  o.s.cloud.context.scope.GenericScope     :  BeanFactory id=9846acea-3d36-3546-9861-3cb19dcafd50
+2022-08-22 10:48:55,369 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  :  Tomcat initialized with port(s): 9091 (http)
+2022-08-22 10:48:55,379 [main] INFO  org.apache.catalina.core.StandardService :  Starting service [Tomcat]
+2022-08-22 10:48:55,379 [main] INFO  org.apache.catalina.core.StandardEngine  :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-22 10:48:55,509 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       :  Initializing Spring embedded WebApplicationContext
+2022-08-22 10:48:55,510 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext :  Root WebApplicationContext: initialization completed in 1609 ms
+2022-08-22 10:48:55,546 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Starting...
+2022-08-22 10:48:55,718 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Start completed.
+2022-08-22 10:48:55,730 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration    :  H2 console available at '/console'. Database available at 'jdbc:h2:mem:testdb'
+2022-08-22 10:48:56,113 [main] INFO  o.hibernate.jpa.internal.util.LogHelper  :  HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 10:48:56,159 [main] INFO  org.hibernate.Version                    :  HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 10:48:56,315 [main] INFO  org.hibernate.annotations.common.Version :  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 10:48:56,426 [main] INFO  org.hibernate.dialect.Dialect            :  HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-22 10:48:56,836 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator       :  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 10:48:56,842 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean :  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 10:48:57,123 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration :  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-22 10:48:57,627 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration :  Eureka HTTP Client uses RestTemplate.
+2022-08-22 10:48:57,763 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-22 10:48:57,820 [main] INFO  o.s.c.netflix.eureka.InstanceInfoFactory :  Setting initial instance status as: STARTING
+2022-08-22 10:48:57,882 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Initializing Eureka in region us-east-1
+2022-08-22 10:48:57,885 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:48:57,903 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Disable delta property : false
+2022-08-22 10:48:57,903 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Single vip registry refresh property : null
+2022-08-22 10:48:57,903 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Force full registry fetch : false
+2022-08-22 10:48:57,903 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Application is null : false
+2022-08-22 10:48:57,903 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Registered Applications size is zero : true
+2022-08-22 10:48:57,903 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Application version is -1: true
+2022-08-22 10:48:57,903 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Getting all instance registry info from the eureka server
+2022-08-22 10:48:58,189 [main] INFO  com.netflix.discovery.DiscoveryClient    :  The response status is 200
+2022-08-22 10:48:58,191 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Starting heartbeat executor: renew interval is: 30
+2022-08-22 10:48:58,193 [main] INFO  c.n.discovery.InstanceInfoReplicator     :  InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-22 10:48:58,197 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Discovery Client initialized at timestamp 1661140138196 with initial instances count: 2
+2022-08-22 10:48:58,205 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry        :  Registering application USER-SERVICE with eureka with status UP
+2022-08-22 10:48:58,206 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Saw local status change event StatusChangeEvent [timestamp=1661140138206, current=UP, previous=STARTING]
+2022-08-22 10:48:58,207 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091: registering service...
+2022-08-22 10:48:58,224 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  :  Tomcat started on port(s): 9091 (http) with context path ''
+2022-08-22 10:48:58,225 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration :  Updating port to 9091
+2022-08-22 10:48:58,239 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091 - registration status: 204
+2022-08-22 10:48:58,253 [main] INFO  c.e.userservice.UserserviceApplication   :  Started UserserviceApplication in 4.763 seconds (JVM running for 5.074)
+2022-08-22 10:48:58,267 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:48:58,285 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: useradmin(String), +85592707070(String), $2a$10$InENUQRnsZLsNP16oYp//u0rkbaHW1N26H.rnVxy1Rhj/VluL1s9u(String)
+2022-08-22 10:48:58,290 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:48:58,294 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:48:58,294 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name0(String), 0928778990(String), $2a$10$InENUQRnsZLsNP16oYp//u0rkbaHW1N26H.rnVxy1Rhj/VluL1s9u(String)
+2022-08-22 10:48:58,294 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:48:58,295 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:48:58,295 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name1(String), 0928778991(String), $2a$10$InENUQRnsZLsNP16oYp//u0rkbaHW1N26H.rnVxy1Rhj/VluL1s9u(String)
+2022-08-22 10:48:58,295 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:48:58,295 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:48:58,295 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name2(String), 0928778992(String), $2a$10$InENUQRnsZLsNP16oYp//u0rkbaHW1N26H.rnVxy1Rhj/VluL1s9u(String)
+2022-08-22 10:48:58,296 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:48:58,296 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:48:58,296 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name3(String), 0928778993(String), $2a$10$InENUQRnsZLsNP16oYp//u0rkbaHW1N26H.rnVxy1Rhj/VluL1s9u(String)
+2022-08-22 10:48:58,296 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:48:58,297 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:48:58,297 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name4(String), 0928778994(String), $2a$10$InENUQRnsZLsNP16oYp//u0rkbaHW1N26H.rnVxy1Rhj/VluL1s9u(String)
+2022-08-22 10:48:58,297 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:48:58,298 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:48:58,298 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name5(String), 0928778995(String), $2a$10$InENUQRnsZLsNP16oYp//u0rkbaHW1N26H.rnVxy1Rhj/VluL1s9u(String)
+2022-08-22 10:48:58,298 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:48:58,299 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:48:58,299 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name6(String), 0928778996(String), $2a$10$InENUQRnsZLsNP16oYp//u0rkbaHW1N26H.rnVxy1Rhj/VluL1s9u(String)
+2022-08-22 10:48:58,299 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:48:58,300 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:48:58,300 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name7(String), 0928778997(String), $2a$10$InENUQRnsZLsNP16oYp//u0rkbaHW1N26H.rnVxy1Rhj/VluL1s9u(String)
+2022-08-22 10:48:58,300 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:48:58,300 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:48:58,300 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name8(String), 0928778998(String), $2a$10$InENUQRnsZLsNP16oYp//u0rkbaHW1N26H.rnVxy1Rhj/VluL1s9u(String)
+2022-08-22 10:48:58,301 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:48:58,301 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:48:58,301 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name9(String), 0928778999(String), $2a$10$InENUQRnsZLsNP16oYp//u0rkbaHW1N26H.rnVxy1Rhj/VluL1s9u(String)
+2022-08-22 10:48:58,301 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:49:19,908 [http-nio-9091-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       :  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-22 10:49:19,909 [http-nio-9091-exec-1] INFO  o.s.web.servlet.DispatcherServlet        :  Initializing Servlet 'dispatcherServlet'
+2022-08-22 10:49:19,910 [http-nio-9091-exec-1] INFO  o.s.web.servlet.DispatcherServlet        :  Completed initialization in 1 ms
+2022-08-22 10:49:19,999 [http-nio-9091-exec-1] INFO  c.e.u.core.service.Impl.UserServiceImpl  :  Find UserById: 1
+2022-08-22 10:49:20,000 [http-nio-9091-exec-1] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  ==>  Preparing: Select * From Users Where id=?
+2022-08-22 10:49:20,008 [http-nio-9091-exec-1] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  ==> Parameters: 1(Integer)
+2022-08-22 10:49:20,025 [http-nio-9091-exec-1] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  <==      Total: 1
+2022-08-22 10:49:20,231 [http-nio-9091-exec-2] DEBUG c.e.userservice.core.dao.UserDAO.update  :  ==>  Preparing: UPDATE users SET username=?, phone=?, password=? WHERE id=?;
+2022-08-22 10:49:20,233 [http-nio-9091-exec-2] DEBUG c.e.userservice.core.dao.UserDAO.update  :  ==> Parameters: updated_username(String), 092899999(String), password(String), 1(Integer)
+2022-08-22 10:49:20,234 [http-nio-9091-exec-2] DEBUG c.e.userservice.core.dao.UserDAO.update  :  <==    Updates: 1
+2022-08-22 10:49:20,235 [http-nio-9091-exec-2] INFO  c.e.u.core.service.Impl.UserServiceImpl  :  Update user successfully: 1
+2022-08-22 10:49:20,235 [http-nio-9091-exec-2] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  ==>  Preparing: Select * From Users Where id=?
+2022-08-22 10:49:20,235 [http-nio-9091-exec-2] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  ==> Parameters: 1(Integer)
+2022-08-22 10:49:20,236 [http-nio-9091-exec-2] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  <==      Total: 1
+2022-08-22 10:49:20,268 [http-nio-9091-exec-3] DEBUG c.e.u.core.dao.UserDAO.deleteById        :  ==>  Preparing: DELETE FROM users WHERE id=?;
+2022-08-22 10:49:20,268 [http-nio-9091-exec-3] DEBUG c.e.u.core.dao.UserDAO.deleteById        :  ==> Parameters: 2(Integer)
+2022-08-22 10:49:20,269 [http-nio-9091-exec-3] DEBUG c.e.u.core.dao.UserDAO.deleteById        :  <==    Updates: 1
+2022-08-22 10:49:20,269 [http-nio-9091-exec-3] INFO  c.e.u.core.service.Impl.UserServiceImpl  :  Delete user successfully: 2
+2022-08-22 10:49:20,300 [http-nio-9091-exec-4] INFO  c.e.u.core.service.Impl.UserServiceImpl  :  Find ListByUsers
+2022-08-22 10:49:20,300 [http-nio-9091-exec-4] DEBUG c.e.u.core.dao.UserDAO.findListUser      :  ==>  Preparing: Select * From Users
+2022-08-22 10:49:20,301 [http-nio-9091-exec-4] DEBUG c.e.u.core.dao.UserDAO.findListUser      :  ==> Parameters: 
+2022-08-22 10:49:20,303 [http-nio-9091-exec-4] DEBUG c.e.u.core.dao.UserDAO.findListUser      :  <==      Total: 10
+2022-08-22 10:49:20,419 [http-nio-9091-exec-5] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-22 10:49:20,419 [http-nio-9091-exec-5] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: useradmin(String), 092899999(String), $2a$10$P2IffrrAqmf1/5gxaiZ41OjecDlXQM5YO0wi.Otb5j18Fsr2oo7dm(String)
+2022-08-22 10:49:20,420 [http-nio-9091-exec-5] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-22 10:49:20,420 [http-nio-9091-exec-5] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  ==>  Preparing: Select * From Users Where id=?
+2022-08-22 10:49:20,420 [http-nio-9091-exec-5] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  ==> Parameters: 12(Integer)
+2022-08-22 10:49:20,421 [http-nio-9091-exec-5] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  <==      Total: 1
+2022-08-22 10:49:20,421 [http-nio-9091-exec-5] INFO  c.e.u.core.service.Impl.UserServiceImpl  :  User created successfully: UserDTO(id=12, username=useradmin, phone=092899999, password=$2a$10$P2IffrrAqmf1/5gxaiZ41OjecDlXQM5YO0wi.Otb5j18Fsr2oo7dm)

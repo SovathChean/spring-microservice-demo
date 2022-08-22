@@ -81,7 +81,7 @@ public class UserControllerTest {
     @Test
     public void should_deleted_user()
     {
-        String url = String.format( UserURI+"/deleted/"+userId, port);
+        String url = String.format( UserURI+"/deleted/2", port);
         ResponseEntity<ResponseData<UserResponseVO>> response = new TestSubmitHelper()
                 .submitSingleDataResponse(url, null, UserResponseVO.class, HttpMethod.GET);
         assertEquals(HttpStatus.OK, response.getStatusCode());
