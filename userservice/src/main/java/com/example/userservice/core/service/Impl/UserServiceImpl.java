@@ -7,6 +7,7 @@ import com.example.userservice.core.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,6 +19,7 @@ public class UserServiceImpl implements UserService {
     private UserDAO userDAO;
     @Override
     public UserDTO createUser(UserDTO userDTO) {
+        userDTO.setPassword(new BCryptPasswordEncoder().encode(userDTO.getPassword()));
         Integer userCreation = userDAO.insert(userDTO);
         if(userCreation == 0)
             throw new BusinessException( "User creation error");
