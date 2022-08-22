@@ -5,25 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb9bf7c4-3931-4c15-8929-f04c6e0f4975" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/common/constant/BasicUrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/dto/UserCreationDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/seeder/DataSeeder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/userservice/controller/UserControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/userservice/helper/GenericClassHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/userservice/helper/HttpHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/userservice/helper/TestSubmitHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway/src/main/java/com/example/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/java/com/example/gateway/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/postservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/PostserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/PostserviceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/common/constands/BasicUrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/seeder/DataSeeder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../postservice/postservice/src/test/java/com/example/postservice/controller/PostControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../postservice/postservice/src/test/java/com/example/postservice/helper/GenericClassHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../postservice/postservice/src/test/java/com/example/postservice/helper/HttpHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../postservice/postservice/src/test/java/com/example/postservice/helper/TestSubmitHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../postservice/logs/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/logs/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/entity/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/entity/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/mapper/PostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/mapper/PostMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/UserserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/UserserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/error/CustomRestExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/error/CustomRestExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/exception/BusinessException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/seeder/DataSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/seeder/DataSeeder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/userservice/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/userservice/controller/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/userservice/helper/TestSubmitHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/userservice/helper/TestSubmitHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +85,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.Tests in 'com.example.userservice.controller'">
+  <component name="RunManager" selected="Application.UserserviceApplication">
     <configuration name="UserserviceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.userservice.UserserviceApplication" />
       <module name="userservice.main" />

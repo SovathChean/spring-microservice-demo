@@ -7358,3 +7358,87 @@ Identify and stop the process that's listening on port 9091 or configure this ap
 2022-08-22 09:42:14,027 [http-nio-9091-exec-6] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  ==> Parameters: 12(Integer)
 2022-08-22 09:42:14,028 [http-nio-9091-exec-6] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  <==      Total: 1
 2022-08-22 09:42:14,028 [http-nio-9091-exec-6] INFO  c.e.u.core.service.Impl.UserServiceImpl  :  User created successfully: UserDTO(id=12, username=useradmin, phone=092899999, password=$2a$10$a4MX86cQzhhfBuQRAH664ev2Ep3RlRIELKKGrgjsFEQ.fJMNtn7Ca)
+2022-08-22 09:44:00,277 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 09:49:00,302 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 09:54:00,310 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 09:59:00,321 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:04:00,342 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:09:00,354 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:14:00,364 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:19:00,381 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:24:00,391 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:29:00,398 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:34:00,385 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:39:00,392 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:40:50,354 [main] INFO  c.e.userservice.UserserviceApplication   :  Starting UserserviceApplication using Java 17.0.4 on 9neals-MacBook-Pro.local with PID 18283 (/Users/9neal/Desktop/backend/spring-boot/spring-microservice-demo/userservice/build/classes/java/main started by 9neal in /Users/9neal/Desktop/backend/spring-boot/spring-microservice-demo/userservice)
+2022-08-22 10:40:50,358 [main] INFO  c.e.userservice.UserserviceApplication   :  No active profile set, falling back to 1 default profile: "default"
+2022-08-22 10:40:51,122 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate :  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 10:40:51,140 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate :  Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2022-08-22 10:40:51,531 [main] INFO  o.s.cloud.context.scope.GenericScope     :  BeanFactory id=9846acea-3d36-3546-9861-3cb19dcafd50
+2022-08-22 10:40:52,334 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  :  Tomcat initialized with port(s): 9091 (http)
+2022-08-22 10:40:52,344 [main] INFO  org.apache.catalina.core.StandardService :  Starting service [Tomcat]
+2022-08-22 10:40:52,345 [main] INFO  org.apache.catalina.core.StandardEngine  :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-22 10:40:52,478 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       :  Initializing Spring embedded WebApplicationContext
+2022-08-22 10:40:52,478 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext :  Root WebApplicationContext: initialization completed in 2069 ms
+2022-08-22 10:40:52,522 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Starting...
+2022-08-22 10:40:52,735 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Start completed.
+2022-08-22 10:40:52,749 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration    :  H2 console available at '/console'. Database available at 'jdbc:h2:mem:testdb'
+2022-08-22 10:40:53,219 [main] INFO  o.hibernate.jpa.internal.util.LogHelper  :  HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 10:40:53,269 [main] INFO  org.hibernate.Version                    :  HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 10:40:53,453 [main] INFO  org.hibernate.annotations.common.Version :  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 10:40:53,590 [main] INFO  org.hibernate.dialect.Dialect            :  HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-22 10:40:54,113 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator       :  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 10:40:54,120 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean :  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 10:40:54,496 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration :  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-22 10:40:55,072 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration :  Eureka HTTP Client uses RestTemplate.
+2022-08-22 10:40:55,227 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-22 10:40:55,291 [main] INFO  o.s.c.netflix.eureka.InstanceInfoFactory :  Setting initial instance status as: STARTING
+2022-08-22 10:40:55,353 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Initializing Eureka in region us-east-1
+2022-08-22 10:40:55,356 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:40:55,373 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Disable delta property : false
+2022-08-22 10:40:55,374 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Single vip registry refresh property : null
+2022-08-22 10:40:55,374 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Force full registry fetch : false
+2022-08-22 10:40:55,374 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Application is null : false
+2022-08-22 10:40:55,374 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Registered Applications size is zero : true
+2022-08-22 10:40:55,374 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Application version is -1: true
+2022-08-22 10:40:55,374 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Getting all instance registry info from the eureka server
+2022-08-22 10:40:55,713 [main] INFO  com.netflix.discovery.DiscoveryClient    :  The response status is 200
+2022-08-22 10:40:55,716 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Starting heartbeat executor: renew interval is: 30
+2022-08-22 10:40:55,719 [main] INFO  c.n.discovery.InstanceInfoReplicator     :  InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-22 10:40:55,725 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Discovery Client initialized at timestamp 1661139655724 with initial instances count: 3
+2022-08-22 10:40:55,736 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry        :  Registering application USER-SERVICE with eureka with status UP
+2022-08-22 10:40:55,736 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Saw local status change event StatusChangeEvent [timestamp=1661139655736, current=UP, previous=STARTING]
+2022-08-22 10:40:55,738 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091: registering service...
+2022-08-22 10:40:55,746 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext :  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9091 is already in use
+2022-08-22 10:40:55,750 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean :  Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 10:40:55,750 [main] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl :  HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-08-22 10:40:55,784 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091 - registration status: 204
+2022-08-22 10:40:56,758 [main] WARN  z.r.AsyncReporter$BoundedAsyncReporter   :  Timed out waiting for in-flight spans to send
+2022-08-22 10:40:56,760 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Shutdown initiated...
+2022-08-22 10:40:56,763 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Shutdown completed.
+2022-08-22 10:40:56,763 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Shutting down DiscoveryClient ...
+2022-08-22 10:40:59,770 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Unregistering ...
+2022-08-22 10:40:59,776 [main] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091 - deregister  status: 200
+2022-08-22 10:40:59,781 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Completed shut down of DiscoveryClient
+2022-08-22 10:40:59,782 [main] INFO  org.apache.catalina.core.StandardService :  Stopping service [Tomcat]
+2022-08-22 10:40:59,797 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener :  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-22 10:40:59,813 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter   :  
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9091 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9091 or configure this application to listen on another port.
+
+2022-08-22 10:40:59,814 [Thread-3] INFO  o.s.c.s.a.z.ZipkinAutoConfiguration      :  Flushing remaining spans on shutdown
+2022-08-22 10:41:01,601 [DiscoveryClient-HeartbeatExecutor-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091 - Re-registering apps/USER-SERVICE
+2022-08-22 10:41:01,605 [DiscoveryClient-HeartbeatExecutor-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091: registering service...
+2022-08-22 10:41:01,634 [DiscoveryClient-HeartbeatExecutor-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/192.168.95.134:USER-SERVICE:9091 - registration status: 204

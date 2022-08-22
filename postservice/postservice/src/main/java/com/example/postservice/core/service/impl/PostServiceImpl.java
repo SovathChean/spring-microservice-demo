@@ -20,7 +20,7 @@ public class PostServiceImpl implements PostService {
     @Override
     public PostDTO createPost(PostDTO postDTO) {
         postDTO.setCreatedAt(LocalDateTime.now());
-        Integer createPost = postDAO.insert(postDTO);
+        int createPost = postDAO.insert(postDTO);
         if(createPost == 0)
             throw new BusinessException( "Post created error");
         log.info("Post created successfully: {}", createPost);
@@ -32,7 +32,7 @@ public class PostServiceImpl implements PostService {
         PostDTO getPost = postDAO.findById(postDTO.getId());
         postDTO.setCreatedAt(getPost.getCreatedAt());
         postDTO.setUpdatedAt(LocalDateTime.now());
-        Integer updatePost = postDAO.update(postDTO);
+        int updatePost = postDAO.update(postDTO);
         if(updatePost == 0)
             throw new BusinessException( "Post updated error");
         log.info("Post updated successfully: {}", updatePost);
@@ -41,7 +41,7 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public Integer deletePost(Integer postId) {
-        Integer deletePost = postDAO.deleteById(postId);
+        int deletePost = postDAO.deleteById(postId);
         if(deletePost == 0)
             throw new BusinessException( "Post deleted error");
         log.info("Post updated successfully: {}", deletePost);
@@ -57,7 +57,7 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public PostDTO getPostById(Integer postId) {
-        log.info("Post GetPostById: postId", postId);
+        log.info("Post GetPostById: {}}", postId);
         return postDAO.findById(postId);
     }
 }

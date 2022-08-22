@@ -3,7 +3,6 @@ package com.example.userservice.core.seeder;
 import com.example.userservice.core.dao.UserDAO;
 import com.example.userservice.core.dto.UserCreationDTO;
 import com.example.userservice.core.dto.UserDTO;
-import com.example.userservice.core.entity.User;
 import com.example.userservice.core.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

@@ -12,7 +12,7 @@ import java.util.List;
 
 @Mapper(unmappedSourcePolicy = ReportingPolicy.IGNORE)
 public interface UserMapper {
-    public UserMapper INSTANCE = Mappers.getMapper(UserMapper.class);
+    UserMapper INSTANCE = Mappers.getMapper(UserMapper.class);
     UserDTO fromUserCreated(UserCreationRequest creationRequest);
     UserDTO fromUserUpdated(UserUpdatedRequest updatedRequest);
     List<UserDTO> fromListUserCreationDTO(List<UserCreationDTO> userCreationDTOList);

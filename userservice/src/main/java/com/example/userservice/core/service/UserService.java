@@ -1,7 +1,6 @@
 package com.example.userservice.core.service;
 
 import com.example.userservice.core.dto.UserDTO;
-import com.example.userservice.core.entity.User;
 
 import java.util.List;
 

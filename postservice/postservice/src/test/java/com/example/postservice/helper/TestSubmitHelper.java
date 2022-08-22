@@ -1,9 +1,8 @@
-package com.example.userservice.helper;
+package com.example.postservice.helper;
 
-import com.example.userservice.web.handler.response.ResponseData;
-import com.example.userservice.web.handler.response.ResponseListData;
+import com.example.postservice.web.handler.response.ResponseData;
+import com.example.postservice.web.handler.response.ResponseListData;
 import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 

@@ -57,3 +57,89 @@
 2022-08-22 09:40:41,231 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient    :  Getting all instance registry info from the eureka server
 2022-08-22 09:40:41,237 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient    :  The response status is 200
 2022-08-22 09:41:10,389 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 09:46:10,399 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 09:51:10,418 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 09:56:10,430 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:01:10,440 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:06:10,460 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:11:10,469 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:16:10,481 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:21:10,492 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:23:06,314 [Thread-3] INFO  o.s.c.s.a.z.ZipkinAutoConfiguration      :  Flushing remaining spans on shutdown
+2022-08-22 10:23:06,352 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry        :  Unregistering application POST-SERVICE with eureka with status DOWN
+2022-08-22 10:23:06,353 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient    :  Saw local status change event StatusChangeEvent [timestamp=1661138586353, current=DOWN, previous=UP]
+2022-08-22 10:23:06,353 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_POST-SERVICE/192.168.95.134:POST-SERVICE:9092: registering service...
+2022-08-22 10:23:06,383 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_POST-SERVICE/192.168.95.134:POST-SERVICE:9092 - registration status: 204
+2022-08-22 10:23:06,499 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean :  Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 10:23:06,503 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl :  HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-08-22 10:23:07,570 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Shutdown initiated...
+2022-08-22 10:23:07,577 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Shutdown completed.
+2022-08-22 10:23:07,580 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient    :  Shutting down DiscoveryClient ...
+2022-08-22 10:23:10,590 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient    :  Unregistering ...
+2022-08-22 10:23:10,596 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_POST-SERVICE/192.168.95.134:POST-SERVICE:9092 - deregister  status: 200
+2022-08-22 10:23:10,606 [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient    :  Completed shut down of DiscoveryClient
+2022-08-22 10:23:15,728 [main] INFO  c.e.postservice.PostserviceApplication   :  Starting PostserviceApplication using Java 17.0.4 on 9neals-MacBook-Pro.local with PID 17888 (/Users/9neal/Desktop/backend/spring-boot/spring-microservice-demo/postservice/postservice/build/classes/java/main started by 9neal in /Users/9neal/Desktop/backend/spring-boot/spring-microservice-demo/postservice)
+2022-08-22 10:23:15,731 [main] INFO  c.e.postservice.PostserviceApplication   :  No active profile set, falling back to 1 default profile: "default"
+2022-08-22 10:23:16,412 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate :  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-22 10:23:16,429 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate :  Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2022-08-22 10:23:16,699 [main] INFO  o.s.cloud.context.scope.GenericScope     :  BeanFactory id=64c40fc4-e064-3588-ac5b-1882d3ab940f
+2022-08-22 10:23:17,312 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  :  Tomcat initialized with port(s): 9092 (http)
+2022-08-22 10:23:17,320 [main] INFO  org.apache.catalina.core.StandardService :  Starting service [Tomcat]
+2022-08-22 10:23:17,320 [main] INFO  org.apache.catalina.core.StandardEngine  :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-22 10:23:17,420 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       :  Initializing Spring embedded WebApplicationContext
+2022-08-22 10:23:17,420 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext :  Root WebApplicationContext: initialization completed in 1651 ms
+2022-08-22 10:23:17,452 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Starting...
+2022-08-22 10:23:17,687 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Start completed.
+2022-08-22 10:23:17,696 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration    :  H2 console available at '/console'. Database available at 'jdbc:h2:mem:testdb'
+2022-08-22 10:23:18,107 [main] INFO  o.hibernate.jpa.internal.util.LogHelper  :  HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-22 10:23:18,164 [main] INFO  org.hibernate.Version                    :  HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-22 10:23:18,339 [main] INFO  org.hibernate.annotations.common.Version :  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-22 10:23:18,475 [main] INFO  org.hibernate.dialect.Dialect            :  HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-22 10:23:18,973 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator       :  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-22 10:23:18,982 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean :  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-22 10:23:19,199 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration :  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-22 10:23:19,764 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration :  Eureka HTTP Client uses RestTemplate.
+2022-08-22 10:23:19,872 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-22 10:23:19,945 [main] INFO  o.s.c.netflix.eureka.InstanceInfoFactory :  Setting initial instance status as: STARTING
+2022-08-22 10:23:19,969 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Initializing Eureka in region us-east-1
+2022-08-22 10:23:19,972 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:23:19,988 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Disable delta property : false
+2022-08-22 10:23:19,988 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Single vip registry refresh property : null
+2022-08-22 10:23:19,988 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Force full registry fetch : false
+2022-08-22 10:23:19,989 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Application is null : false
+2022-08-22 10:23:19,989 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Registered Applications size is zero : true
+2022-08-22 10:23:19,989 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Application version is -1: true
+2022-08-22 10:23:19,989 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Getting all instance registry info from the eureka server
+2022-08-22 10:23:20,241 [main] INFO  com.netflix.discovery.DiscoveryClient    :  The response status is 200
+2022-08-22 10:23:20,244 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Starting heartbeat executor: renew interval is: 30
+2022-08-22 10:23:20,246 [main] INFO  c.n.discovery.InstanceInfoReplicator     :  InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-22 10:23:20,250 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Discovery Client initialized at timestamp 1661138600249 with initial instances count: 3
+2022-08-22 10:23:20,258 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry        :  Registering application POST-SERVICE with eureka with status UP
+2022-08-22 10:23:20,258 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Saw local status change event StatusChangeEvent [timestamp=1661138600258, current=UP, previous=STARTING]
+2022-08-22 10:23:20,259 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_POST-SERVICE/192.168.95.134:POST-SERVICE:9092: registering service...
+2022-08-22 10:23:20,281 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  :  Tomcat started on port(s): 9092 (http) with context path ''
+2022-08-22 10:23:20,282 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration :  Updating port to 9092
+2022-08-22 10:23:20,298 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_POST-SERVICE/192.168.95.134:POST-SERVICE:9092 - registration status: 204
+2022-08-22 10:23:20,304 [main] INFO  c.e.postservice.PostserviceApplication   :  Started PostserviceApplication in 4.963 seconds (JVM running for 5.588)
+2022-08-22 10:23:29,172 [http-nio-9092-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       :  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-22 10:23:29,174 [http-nio-9092-exec-1] INFO  o.s.web.servlet.DispatcherServlet        :  Initializing Servlet 'dispatcherServlet'
+2022-08-22 10:23:29,177 [http-nio-9092-exec-1] INFO  o.s.web.servlet.DispatcherServlet        :  Completed initialization in 2 ms
+2022-08-22 10:23:29,288 [http-nio-9092-exec-1] INFO  c.e.p.core.service.impl.PostServiceImpl  :  Post GetPostById: postId
+2022-08-22 10:23:29,553 [http-nio-9092-exec-2] ERROR c.e.p.c.error.CustomRestExceptionHandler :  Validation log: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.postservice.web.handler.response.ResponseData<com.example.postservice.web.vo.response.PostResponseVO>> com.example.postservice.web.controller.PostController.updatePost(com.example.postservice.web.vo.request.PostUpdatedRequest): [Field error in object 'postUpdatedRequest' on field 'userId': rejected value [null]; codes [NotNull.postUpdatedRequest.userId,NotNull.userId,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [postUpdatedRequest.userId,userId]; arguments []; default message [userId]]; default message [UserId is required]] 
+2022-08-22 10:23:29,601 [http-nio-9092-exec-3] INFO  c.e.p.core.service.impl.PostServiceImpl  :  Post updated successfully: 1
+2022-08-22 10:23:29,643 [http-nio-9092-exec-4] INFO  c.e.p.core.service.impl.PostServiceImpl  :  Post GetAllPosts: [PostDTO(id=2, title=Post0, description=Description0, userId=1, createdAt=null, updatedAt=null), PostDTO(id=3, title=Post1, description=Description1, userId=2, createdAt=null, updatedAt=null), PostDTO(id=4, title=Post2, description=Description2, userId=3, createdAt=null, updatedAt=null), PostDTO(id=5, title=Post3, description=Description3, userId=4, createdAt=null, updatedAt=null), PostDTO(id=6, title=Post4, description=Description4, userId=5, createdAt=null, updatedAt=null), PostDTO(id=7, title=Post5, description=Description5, userId=6, createdAt=null, updatedAt=null), PostDTO(id=8, title=Post6, description=Description6, userId=7, createdAt=null, updatedAt=null), PostDTO(id=9, title=Post7, description=Description7, userId=8, createdAt=null, updatedAt=null), PostDTO(id=10, title=Post8, description=Description8, userId=9, createdAt=null, updatedAt=null), PostDTO(id=11, title=Post9, description=Description9, userId=10, createdAt=null, updatedAt=null)]
+2022-08-22 10:23:29,688 [http-nio-9092-exec-5] WARN  o.s.web.servlet.PageNotFound             :  Request method 'POST' not supported
+2022-08-22 10:26:34,350 [http-nio-9092-exec-7] INFO  c.e.p.core.service.impl.PostServiceImpl  :  Post GetPostById: postId
+2022-08-22 10:26:34,522 [http-nio-9092-exec-8] ERROR c.e.p.c.error.CustomRestExceptionHandler :  Validation log: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.postservice.web.handler.response.ResponseData<com.example.postservice.web.vo.response.PostResponseVO>> com.example.postservice.web.controller.PostController.updatePost(com.example.postservice.web.vo.request.PostUpdatedRequest): [Field error in object 'postUpdatedRequest' on field 'userId': rejected value [null]; codes [NotNull.postUpdatedRequest.userId,NotNull.userId,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [postUpdatedRequest.userId,userId]; arguments []; default message [userId]]; default message [UserId is required]] 
+2022-08-22 10:26:34,554 [http-nio-9092-exec-9] INFO  c.e.p.core.service.impl.PostServiceImpl  :  Post updated successfully: 1
+2022-08-22 10:26:34,586 [http-nio-9092-exec-10] INFO  c.e.p.core.service.impl.PostServiceImpl  :  Post GetAllPosts: [PostDTO(id=2, title=Post0, description=Description0, userId=1, createdAt=null, updatedAt=null), PostDTO(id=4, title=Post2, description=Description2, userId=3, createdAt=null, updatedAt=null), PostDTO(id=5, title=Post3, description=Description3, userId=4, createdAt=null, updatedAt=null), PostDTO(id=6, title=Post4, description=Description4, userId=5, createdAt=null, updatedAt=null), PostDTO(id=7, title=Post5, description=Description5, userId=6, createdAt=null, updatedAt=null), PostDTO(id=8, title=Post6, description=Description6, userId=7, createdAt=null, updatedAt=null), PostDTO(id=9, title=Post7, description=Description7, userId=8, createdAt=null, updatedAt=null), PostDTO(id=10, title=Post8, description=Description8, userId=9, createdAt=null, updatedAt=null), PostDTO(id=11, title=Post9, description=Description9, userId=10, createdAt=null, updatedAt=null)]
+2022-08-22 10:26:34,621 [http-nio-9092-exec-1] INFO  c.e.p.core.service.impl.PostServiceImpl  :  Post created successfully: 1
+2022-08-22 10:27:01,953 [http-nio-9092-exec-2] INFO  c.e.p.core.service.impl.PostServiceImpl  :  Post GetPostById: postId
+2022-08-22 10:27:02,083 [http-nio-9092-exec-3] INFO  c.e.p.core.service.impl.PostServiceImpl  :  Post updated successfully: 1
+2022-08-22 10:27:02,102 [http-nio-9092-exec-4] INFO  c.e.p.core.service.impl.PostServiceImpl  :  Post updated successfully: 1
+2022-08-22 10:27:02,120 [http-nio-9092-exec-5] INFO  c.e.p.core.service.impl.PostServiceImpl  :  Post GetAllPosts: [PostDTO(id=2, title=update_post, description=post_description, userId=2, createdAt=null, updatedAt=2022-08-22T10:27:02.080467), PostDTO(id=5, title=Post3, description=Description3, userId=4, createdAt=null, updatedAt=null), PostDTO(id=6, title=Post4, description=Description4, userId=5, createdAt=null, updatedAt=null), PostDTO(id=7, title=Post5, description=Description5, userId=6, createdAt=null, updatedAt=null), PostDTO(id=8, title=Post6, description=Description6, userId=7, createdAt=null, updatedAt=null), PostDTO(id=9, title=Post7, description=Description7, userId=8, createdAt=null, updatedAt=null), PostDTO(id=10, title=Post8, description=Description8, userId=9, createdAt=null, updatedAt=null), PostDTO(id=11, title=Post9, description=Description9, userId=10, createdAt=null, updatedAt=null), PostDTO(id=12, title=post_title, description=post_description, userId=2, createdAt=2022-08-22T10:26:34.620120, updatedAt=null)]
+2022-08-22 10:27:02,140 [http-nio-9092-exec-6] INFO  c.e.p.core.service.impl.PostServiceImpl  :  Post created successfully: 1
+2022-08-22 10:28:19,996 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:33:19,981 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:38:19,985 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-22 10:43:19,994 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration

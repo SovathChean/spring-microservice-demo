@@ -12,6 +12,8 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
+import java.util.Objects;
+
 import static org.hibernate.validator.internal.util.Contracts.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -36,7 +38,7 @@ public class UserControllerTest {
         ResponseEntity<ResponseData<UserResponseVO>> response = new TestSubmitHelper()
                 .submitSingleDataResponse(url, request, UserResponseVO.class, HttpMethod.POST);
         assertEquals(HttpStatus.CREATED, response.getStatusCode());
-        assertNotNull(response.getBody());
+        assertNotNull(Objects.requireNonNull(response.getBody()));
         assertNotNull(response.getBody().getData());
         assertEquals(response.getBody().getData().getUsername(), username);
         assertEquals(response.getBody().getData().getPhone(), phone);
@@ -49,7 +51,7 @@ public class UserControllerTest {
         ResponseEntity<ResponseData<UserResponseVO>> response = new TestSubmitHelper()
                 .submitSingleDataResponse(url, null, UserResponseVO.class, HttpMethod.GET);
         assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertNotNull(response.getBody());
+        assertNotNull(Objects.requireNonNull(response.getBody()));
         assertNotNull(response.getBody().getData());
     }
     @Test
@@ -72,7 +74,7 @@ public class UserControllerTest {
         ResponseEntity<ResponseData<UserResponseVO>> response = new TestSubmitHelper()
                 .submitSingleDataResponse(url, request, UserResponseVO.class, HttpMethod.POST);
         assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertNotNull(response.getBody());
+        assertNotNull(Objects.requireNonNull(response.getBody()));
         assertNotNull(response.getBody().getData());
         assertEquals(response.getBody().getData().getUsername(), updated_username);
     }

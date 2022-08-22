@@ -6,7 +6,6 @@ import com.example.userservice.core.exception.BusinessException;
 import com.example.userservice.core.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +19,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserDTO createUser(UserDTO userDTO) {
         userDTO.setPassword(new BCryptPasswordEncoder().encode(userDTO.getPassword()));
-        Integer userCreation = userDAO.insert(userDTO);
+        int userCreation = userDAO.insert(userDTO);
         if(userCreation == 0)
             throw new BusinessException( "User creation error");
         UserDTO user = userDAO.findUserById(userDTO.getId());
@@ -31,31 +30,31 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDTO getUserById(Integer userId) {
-        log.info("Find UserById:", userId);
+        log.info("Find UserById: {}", userId);
         return userDAO.findUserById(userId);
     }
 
     @Override
     public List<UserDTO> getListUsers() {
-        log.info("Find ListByUsers: {}");
+        log.info("Find ListByUsers");
         return userDAO.findListUser();
     }
 
     @Override
     public UserDTO updateUser(UserDTO userDTO) {
-        Integer updateUser = userDAO.update(userDTO);
+        int updateUser = userDAO.update(userDTO);
         if(updateUser == 0)
             throw new BusinessException( "User Updated error");
-        log.info("Update user successfully user-id: ", userDTO.getId());
+        log.info("Update user successfully: {}", userDTO.getId());
         return userDAO.findUserById(userDTO.getId());
     }
 
     @Override
     public Integer deleteUser(Integer userId) {
-        Integer deleteUser = userDAO.deleteById(userId);
+        int deleteUser = userDAO.deleteById(userId);
         if(deleteUser == 0)
             throw new BusinessException( "User creation error");
-        log.info("Delete user successfully user-id: ", userId);
+        log.info("Delete user successfully: {}", userId);
         return deleteUser;
     }
 
