@@ -267,3 +267,46 @@ java.lang.IllegalStateException: Could not resolve parameter [1] in protected or
 2022-08-22 10:45:51,827 [http-nio-9092-exec-3] INFO  c.e.p.core.service.impl.PostServiceImpl  :  Post updated successfully: 1
 2022-08-22 10:45:51,856 [http-nio-9092-exec-4] INFO  c.e.p.core.service.impl.PostServiceImpl  :  Post GetAllPosts: [PostDTO(id=1, title=post_title, description=description, userId=2, createdAt=null, updatedAt=null), PostDTO(id=2, title=update_post, description=post_description, userId=2, createdAt=null, updatedAt=2022-08-22T10:45:51.796742), PostDTO(id=3, title=Post1, description=Description1, userId=2, createdAt=null, updatedAt=null), PostDTO(id=5, title=Post3, description=Description3, userId=4, createdAt=null, updatedAt=null), PostDTO(id=6, title=Post4, description=Description4, userId=5, createdAt=null, updatedAt=null), PostDTO(id=7, title=Post5, description=Description5, userId=6, createdAt=null, updatedAt=null), PostDTO(id=8, title=Post6, description=Description6, userId=7, createdAt=null, updatedAt=null), PostDTO(id=9, title=Post7, description=Description7, userId=8, createdAt=null, updatedAt=null), PostDTO(id=10, title=Post8, description=Description8, userId=9, createdAt=null, updatedAt=null), PostDTO(id=11, title=Post9, description=Description9, userId=10, createdAt=null, updatedAt=null)]
 2022-08-22 10:45:51,893 [http-nio-9092-exec-5] INFO  c.e.p.core.service.impl.PostServiceImpl  :  Post created successfully: 1
+2022-08-23 10:42:38,017 [main] INFO  c.e.postservice.PostserviceApplication   :  Starting PostserviceApplication using Java 17.0.4.1 on B1326-Sovath1 with PID 21124 (D:\backend\spring\spring-microservice-demo\postservice\postservice\build\classes\java\main started by sovath.chean in D:\backend\spring\spring-microservice-demo\postservice)
+2022-08-23 10:42:38,021 [main] INFO  c.e.postservice.PostserviceApplication   :  No active profile set, falling back to 1 default profile: "default"
+2022-08-23 10:42:39,193 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate :  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-23 10:42:39,218 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate :  Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces.
+2022-08-23 10:42:39,654 [main] INFO  o.s.cloud.context.scope.GenericScope     :  BeanFactory id=588c15c3-2cdc-3002-9d42-49e7af0a8cc2
+2022-08-23 10:42:41,222 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  :  Tomcat initialized with port(s): 9092 (http)
+2022-08-23 10:42:41,235 [main] INFO  org.apache.catalina.core.StandardService :  Starting service [Tomcat]
+2022-08-23 10:42:41,236 [main] INFO  org.apache.catalina.core.StandardEngine  :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-23 10:42:41,560 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       :  Initializing Spring embedded WebApplicationContext
+2022-08-23 10:42:41,560 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext :  Root WebApplicationContext: initialization completed in 3485 ms
+2022-08-23 10:42:41,668 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Starting...
+2022-08-23 10:42:42,008 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Start completed.
+2022-08-23 10:42:42,025 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration    :  H2 console available at '/console'. Database available at 'jdbc:h2:mem:testdb'
+2022-08-23 10:42:43,499 [main] INFO  o.hibernate.jpa.internal.util.LogHelper  :  HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-23 10:42:43,596 [main] INFO  org.hibernate.Version                    :  HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-23 10:42:43,856 [main] INFO  org.hibernate.annotations.common.Version :  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-23 10:42:44,016 [main] INFO  org.hibernate.dialect.Dialect            :  HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-23 10:42:44,515 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator       :  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-23 10:42:44,528 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean :  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-23 10:42:45,108 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration :  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-23 10:42:48,862 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration :  Eureka HTTP Client uses RestTemplate.
+2022-08-23 10:42:49,498 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-23 10:42:49,575 [main] INFO  o.s.c.netflix.eureka.InstanceInfoFactory :  Setting initial instance status as: STARTING
+2022-08-23 10:42:49,663 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Initializing Eureka in region us-east-1
+2022-08-23 10:42:49,668 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-23 10:42:49,688 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Disable delta property : false
+2022-08-23 10:42:49,688 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Single vip registry refresh property : null
+2022-08-23 10:42:49,688 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Force full registry fetch : false
+2022-08-23 10:42:49,689 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Application is null : false
+2022-08-23 10:42:49,689 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Registered Applications size is zero : true
+2022-08-23 10:42:49,689 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Application version is -1: true
+2022-08-23 10:42:49,689 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Getting all instance registry info from the eureka server
+2022-08-23 10:42:50,068 [main] INFO  com.netflix.discovery.DiscoveryClient    :  The response status is 200
+2022-08-23 10:42:50,071 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Starting heartbeat executor: renew interval is: 30
+2022-08-23 10:42:50,074 [main] INFO  c.n.discovery.InstanceInfoReplicator     :  InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-23 10:42:50,081 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Discovery Client initialized at timestamp 1661226170080 with initial instances count: 1
+2022-08-23 10:42:50,092 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry        :  Registering application POST-SERVICE with eureka with status UP
+2022-08-23 10:42:50,093 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Saw local status change event StatusChangeEvent [timestamp=1661226170093, current=UP, previous=STARTING]
+2022-08-23 10:42:50,094 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_POST-SERVICE/B1326-Sovath1.wingmoney.com:POST-SERVICE:9092: registering service...
+2022-08-23 10:42:50,133 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  :  Tomcat started on port(s): 9092 (http) with context path ''
+2022-08-23 10:42:50,134 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration :  Updating port to 9092
+2022-08-23 10:42:50,157 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_POST-SERVICE/B1326-Sovath1.wingmoney.com:POST-SERVICE:9092 - registration status: 204
+2022-08-23 10:42:50,313 [main] INFO  c.e.postservice.PostserviceApplication   :  Started PostserviceApplication in 12.93 seconds (JVM running for 13.311)

@@ -7911,3 +7911,83 @@ Identify and stop the process that's listening on port 9091 or configure this ap
 2022-08-22 10:49:20,420 [http-nio-9091-exec-5] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  ==> Parameters: 12(Integer)
 2022-08-22 10:49:20,421 [http-nio-9091-exec-5] DEBUG c.e.u.core.dao.UserDAO.findUserById      :  <==      Total: 1
 2022-08-22 10:49:20,421 [http-nio-9091-exec-5] INFO  c.e.u.core.service.Impl.UserServiceImpl  :  User created successfully: UserDTO(id=12, username=useradmin, phone=092899999, password=$2a$10$P2IffrrAqmf1/5gxaiZ41OjecDlXQM5YO0wi.Otb5j18Fsr2oo7dm)
+2022-08-23 10:43:01,913 [main] INFO  c.e.userservice.UserserviceApplication   :  Starting UserserviceApplication using Java 17.0.4.1 on B1326-Sovath1 with PID 3184 (D:\backend\spring\spring-microservice-demo\userservice\build\classes\java\main started by sovath.chean in D:\backend\spring\spring-microservice-demo\userservice)
+2022-08-23 10:43:01,917 [main] INFO  c.e.userservice.UserserviceApplication   :  No active profile set, falling back to 1 default profile: "default"
+2022-08-23 10:43:02,684 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate :  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-23 10:43:02,709 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate :  Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2022-08-23 10:43:03,040 [main] INFO  o.s.cloud.context.scope.GenericScope     :  BeanFactory id=c83b708a-3e9e-3bde-9a02-904a1e22d9d8
+2022-08-23 10:43:03,818 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  :  Tomcat initialized with port(s): 9091 (http)
+2022-08-23 10:43:03,825 [main] INFO  org.apache.catalina.core.StandardService :  Starting service [Tomcat]
+2022-08-23 10:43:03,825 [main] INFO  org.apache.catalina.core.StandardEngine  :  Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-23 10:43:04,003 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       :  Initializing Spring embedded WebApplicationContext
+2022-08-23 10:43:04,003 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext :  Root WebApplicationContext: initialization completed in 2040 ms
+2022-08-23 10:43:04,045 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Starting...
+2022-08-23 10:43:04,207 [main] INFO  com.zaxxer.hikari.HikariDataSource       :  HikariPool-1 - Start completed.
+2022-08-23 10:43:04,218 [main] INFO  o.s.b.a.h2.H2ConsoleAutoConfiguration    :  H2 console available at '/console'. Database available at 'jdbc:h2:mem:testdb'
+2022-08-23 10:43:04,665 [main] INFO  o.hibernate.jpa.internal.util.LogHelper  :  HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-23 10:43:04,723 [main] INFO  org.hibernate.Version                    :  HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-23 10:43:04,878 [main] INFO  org.hibernate.annotations.common.Version :  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-23 10:43:04,997 [main] INFO  org.hibernate.dialect.Dialect            :  HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-23 10:43:05,484 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator       :  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-23 10:43:05,491 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean :  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-23 10:43:05,958 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration :  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-23 10:43:07,444 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration :  Eureka HTTP Client uses RestTemplate.
+2022-08-23 10:43:07,849 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger :  Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-23 10:43:07,915 [main] INFO  o.s.c.netflix.eureka.InstanceInfoFactory :  Setting initial instance status as: STARTING
+2022-08-23 10:43:07,981 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Initializing Eureka in region us-east-1
+2022-08-23 10:43:07,987 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver      :  Resolving eureka endpoints via configuration
+2022-08-23 10:43:08,008 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Disable delta property : false
+2022-08-23 10:43:08,008 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Single vip registry refresh property : null
+2022-08-23 10:43:08,008 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Force full registry fetch : false
+2022-08-23 10:43:08,009 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Application is null : false
+2022-08-23 10:43:08,009 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Registered Applications size is zero : true
+2022-08-23 10:43:08,009 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Application version is -1: true
+2022-08-23 10:43:08,009 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Getting all instance registry info from the eureka server
+2022-08-23 10:43:08,316 [main] INFO  com.netflix.discovery.DiscoveryClient    :  The response status is 200
+2022-08-23 10:43:08,319 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Starting heartbeat executor: renew interval is: 30
+2022-08-23 10:43:08,321 [main] INFO  c.n.discovery.InstanceInfoReplicator     :  InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-23 10:43:08,324 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Discovery Client initialized at timestamp 1661226188323 with initial instances count: 2
+2022-08-23 10:43:08,333 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry        :  Registering application USER-SERVICE with eureka with status UP
+2022-08-23 10:43:08,334 [main] INFO  com.netflix.discovery.DiscoveryClient    :  Saw local status change event StatusChangeEvent [timestamp=1661226188334, current=UP, previous=STARTING]
+2022-08-23 10:43:08,335 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/B1326-Sovath1.wingmoney.com:USER-SERVICE:9091: registering service...
+2022-08-23 10:43:08,366 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer  :  Tomcat started on port(s): 9091 (http) with context path ''
+2022-08-23 10:43:08,367 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration :  Updating port to 9091
+2022-08-23 10:43:08,383 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient    :  DiscoveryClient_USER-SERVICE/B1326-Sovath1.wingmoney.com:USER-SERVICE:9091 - registration status: 204
+2022-08-23 10:43:08,519 [main] INFO  c.e.userservice.UserserviceApplication   :  Started UserserviceApplication in 7.136 seconds (JVM running for 7.514)
+2022-08-23 10:43:08,537 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-23 10:43:08,556 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: useradmin(String), +85592707070(String), $2a$10$8JPENOGcVFakTzV9HCTE..eRHKLMhm47EKxnvoQpvo.yY/.0OCS6m(String)
+2022-08-23 10:43:08,561 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-23 10:43:08,566 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-23 10:43:08,567 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name0(String), 0928778990(String), $2a$10$8JPENOGcVFakTzV9HCTE..eRHKLMhm47EKxnvoQpvo.yY/.0OCS6m(String)
+2022-08-23 10:43:08,567 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-23 10:43:08,567 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-23 10:43:08,568 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name1(String), 0928778991(String), $2a$10$8JPENOGcVFakTzV9HCTE..eRHKLMhm47EKxnvoQpvo.yY/.0OCS6m(String)
+2022-08-23 10:43:08,568 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-23 10:43:08,568 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-23 10:43:08,568 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name2(String), 0928778992(String), $2a$10$8JPENOGcVFakTzV9HCTE..eRHKLMhm47EKxnvoQpvo.yY/.0OCS6m(String)
+2022-08-23 10:43:08,568 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-23 10:43:08,569 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-23 10:43:08,569 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name3(String), 0928778993(String), $2a$10$8JPENOGcVFakTzV9HCTE..eRHKLMhm47EKxnvoQpvo.yY/.0OCS6m(String)
+2022-08-23 10:43:08,569 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-23 10:43:08,569 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-23 10:43:08,570 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name4(String), 0928778994(String), $2a$10$8JPENOGcVFakTzV9HCTE..eRHKLMhm47EKxnvoQpvo.yY/.0OCS6m(String)
+2022-08-23 10:43:08,570 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-23 10:43:08,570 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-23 10:43:08,570 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name5(String), 0928778995(String), $2a$10$8JPENOGcVFakTzV9HCTE..eRHKLMhm47EKxnvoQpvo.yY/.0OCS6m(String)
+2022-08-23 10:43:08,570 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-23 10:43:08,571 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-23 10:43:08,571 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name6(String), 0928778996(String), $2a$10$8JPENOGcVFakTzV9HCTE..eRHKLMhm47EKxnvoQpvo.yY/.0OCS6m(String)
+2022-08-23 10:43:08,571 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-23 10:43:08,571 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-23 10:43:08,572 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name7(String), 0928778997(String), $2a$10$8JPENOGcVFakTzV9HCTE..eRHKLMhm47EKxnvoQpvo.yY/.0OCS6m(String)
+2022-08-23 10:43:08,572 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-23 10:43:08,572 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-23 10:43:08,572 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name8(String), 0928778998(String), $2a$10$8JPENOGcVFakTzV9HCTE..eRHKLMhm47EKxnvoQpvo.yY/.0OCS6m(String)
+2022-08-23 10:43:08,572 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-23 10:43:08,572 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==>  Preparing: INSERT INTO users (username, phone, password) VALUES (?, ?, ?);
+2022-08-23 10:43:08,572 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  ==> Parameters: Name9(String), 0928778999(String), $2a$10$8JPENOGcVFakTzV9HCTE..eRHKLMhm47EKxnvoQpvo.yY/.0OCS6m(String)
+2022-08-23 10:43:08,573 [main] DEBUG c.e.userservice.core.dao.UserDAO.insert  :  <==    Updates: 1
+2022-08-23 10:43:50,246 [http-nio-9091-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]       :  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-23 10:43:50,247 [http-nio-9091-exec-1] INFO  o.s.web.servlet.DispatcherServlet        :  Initializing Servlet 'dispatcherServlet'
+2022-08-23 10:43:50,249 [http-nio-9091-exec-1] INFO  o.s.web.servlet.DispatcherServlet        :  Completed initialization in 2 ms
+2022-08-23 10:43:50,716 [http-nio-9091-exec-1] INFO  o.springdoc.api.AbstractOpenApiResource  :  Init duration for springdoc-openapi is: 327 ms
