@@ -11,7 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ResponseError {
-    private HttpStatus status;
     private String message;
     private List<String> error;
+    private Boolean success;
 }

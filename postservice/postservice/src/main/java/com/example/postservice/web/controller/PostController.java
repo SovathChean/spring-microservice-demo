@@ -71,11 +71,10 @@ public class PostController {
     @RequestMapping(value = "/api/posts/deleted/{id}", method = RequestMethod.GET)
     public ResponseEntity<ResponseMessage> deleteUser(@PathVariable Integer id)
     {
-        throw new BusinessException("Can deleted");
-//        Integer deletePost = postService.deletePost(id);
-//        if(deletePost == 0)
-//            return ResponseHandler.responseWithMsg("Delete has failed", HttpStatus.BAD_REQUEST, false );
-//
-//        return ResponseHandler.responseWithMsg("Delete successfully", HttpStatus.OK, true );
+        Integer deletePost = postService.deletePost(id);
+        if(deletePost == 0)
+            return ResponseHandler.responseWithMsg("Delete has failed", HttpStatus.BAD_REQUEST, false );
+
+        return ResponseHandler.responseWithMsg("Delete successfully", HttpStatus.OK, true );
     }
 }

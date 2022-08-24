@@ -36,19 +36,19 @@ public class CustomRestExceptionHandler extends ResponseEntityExceptionHandler {
         }
         log.error("Validation log: {}", ex.getLocalizedMessage());
         ResponseError apiError =
-                new ResponseError(HttpStatus.BAD_REQUEST, ex.getLocalizedMessage(), errors);
+                new ResponseError("Validation Error", errors, false);
         return handleExceptionInternal(
-                ex, apiError, headers, apiError.getStatus(), request);
+                ex, apiError, headers, HttpStatus.BAD_REQUEST, request);
     }
 
     @ExceptionHandler(value = {BusinessException.class})
-    protected ResponseEntity<Object> handleBusinessException(BusinessException ex, HttpHeaders headers, WebRequest request)
+    protected ResponseEntity<Object> handleBusinessException(RuntimeException ex, HttpHeaders headers, WebRequest request)
     {
         ResponseError apiError =
-                new ResponseError(HttpStatus.BAD_REQUEST, ex.getMessage(), null);
+                new ResponseError(ex.getMessage(), null, false);
         log.error("BusinessException log: {}", ex.getLocalizedMessage());
         return handleExceptionInternal(
-                ex, apiError, headers, apiError.getStatus(), request);
+                ex, apiError, headers, HttpStatus.BAD_REQUEST, request);
     }
 
 
