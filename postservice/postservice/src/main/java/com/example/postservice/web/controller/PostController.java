@@ -1,6 +1,7 @@
 package com.example.postservice.web.controller;
 
 import com.example.postservice.core.dto.PostDTO;
+import com.example.postservice.core.exception.BusinessException;
 import com.example.postservice.core.mapper.PostMapper;
 import com.example.postservice.core.service.PostService;
 import com.example.postservice.web.handler.ResponseHandler;
@@ -70,10 +71,11 @@ public class PostController {
     @RequestMapping(value = "/api/posts/deleted/{id}", method = RequestMethod.GET)
     public ResponseEntity<ResponseMessage> deleteUser(@PathVariable Integer id)
     {
-        Integer deletePost = postService.deletePost(id);
-        if(deletePost == 0)
-            return ResponseHandler.responseWithMsg("Delete has failed", HttpStatus.BAD_REQUEST, false );
-
-        return ResponseHandler.responseWithMsg("Delete successfully", HttpStatus.OK, true );
+        throw new BusinessException("Can deleted");
+//        Integer deletePost = postService.deletePost(id);
+//        if(deletePost == 0)
+//            return ResponseHandler.responseWithMsg("Delete has failed", HttpStatus.BAD_REQUEST, false );
+//
+//        return ResponseHandler.responseWithMsg("Delete successfully", HttpStatus.OK, true );
     }
 }

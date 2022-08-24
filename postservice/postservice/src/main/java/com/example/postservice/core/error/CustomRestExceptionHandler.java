@@ -2,6 +2,7 @@ package com.example.postservice.core.error;
 
 import com.example.postservice.core.exception.BusinessException;
 import com.example.postservice.web.handler.response.ResponseError;
+import com.example.postservice.web.handler.response.ResponseMessage;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -33,17 +34,17 @@ public class CustomRestExceptionHandler extends ResponseEntityExceptionHandler {
         }
         log.error("Validation log: {}", ex.getLocalizedMessage());
         ResponseError apiError =
-                new ResponseError(HttpStatus.BAD_REQUEST, ex.getLocalizedMessage(), errors);
+                new ResponseError("Validation error", errors, false);
         return handleExceptionInternal(
-                ex, apiError, headers, apiError.getStatus(), request);
+                ex, apiError, headers, HttpStatus.BAD_REQUEST, request);
     }
     @ExceptionHandler(value = {BusinessException.class})
-    protected ResponseEntity<Object> handleBusinessException(BusinessException ex, HttpHeaders headers, WebRequest request)
+    protected ResponseEntity<Object> handleBusinessException(RuntimeException ex, WebRequest request)
     {
         ResponseError apiError =
-                new ResponseError(HttpStatus.BAD_REQUEST, ex.getMessage(), null);
+                new ResponseError(ex.getMessage(), null, false);
         log.error("BusinessException log: {}", ex.getLocalizedMessage());
         return handleExceptionInternal(
-                ex, apiError, headers, apiError.getStatus(), request);
+                ex, apiError, new HttpHeaders(), HttpStatus.NOT_FOUND, request);
     }
 }
