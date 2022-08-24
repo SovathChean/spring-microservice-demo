@@ -5,3 +5,15 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+#USER-SERVICE:
+#  ribbon:
+#    eureka:
+#      enabled: false
+#    listOfServers: localhost:9091,localhost:9092
+#    ServerListRefreshInterval: 2000
+#POST-SERVICE:
+#  ribbon:
+#    eureka:
+#      enabled: false
+#    listOfServers: localhost:9093,localhost:9094
+#    ServerListRefreshInterval: 2000

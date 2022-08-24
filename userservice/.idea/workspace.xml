@@ -5,10 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb9bf7c4-3931-4c15-8929-f04c6e0f4975" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/spring-microservice-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/src/main/java/com/example/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/java/com/example/gateway/GatewayApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../postservice/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/postservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../postservice/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../postservice/logs/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/logs/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/web/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/web/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-registry/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../service-registry/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/UserserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/UserserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/web/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,24 +75,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/backend/spring/spring-microservice-demo/userservice&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/backend/spring/spring-microservice-demo/userservice",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager" selected="Application.UserserviceApplication">
-    <configuration name="UserserviceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="Multirun.UserserviceMulti">
+    <configuration name="Unserservice2" type="Application" factoryName="Application" activateToolWindowBeforeRun="false">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <envs>
+        <env name="server.port" value="9091" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.example.userservice.UserserviceApplication" />
+      <module name="userservice.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Userservice1" type="Application" factoryName="Application" activateToolWindowBeforeRun="false" temporary="true">
+      <envs>
+        <env name="server.port" value="9092" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="com.example.userservice.UserserviceApplication" />
       <module name="userservice.main" />
       <extension name="coverage">
@@ -114,6 +143,11 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="UserserviceMulti" type="Multirun" separateTabs="false" reuseTabsWithFailures="false" startOneByOne="true" markFailedProcess="true" hideSuccessProcess="false" delayTime="0.0">
+      <runConfiguration name="Unserservice2" type="Application" />
+      <runConfiguration name="Userservice1" type="Application" />
+      <method v="2" />
+    </configuration>
     <configuration name="UserserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="userservice.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.userservice.UserserviceApplication" />
@@ -121,10 +155,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Unserservice2" />
+      <item itemvalue="Application.Userservice1" />
+      <item itemvalue="Gradle.Tests in 'com.example.userservice.controller'" />
+      <item itemvalue="Multirun.UserserviceMulti" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Userservice1" />
         <item itemvalue="Gradle.Tests in 'com.example.userservice.controller'" />
-        <item itemvalue="Application.UserserviceApplication" />
       </list>
     </recent_temporary>
   </component>

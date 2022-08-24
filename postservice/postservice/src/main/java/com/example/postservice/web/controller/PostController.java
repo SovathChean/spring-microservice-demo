@@ -12,6 +12,7 @@ import com.example.postservice.web.vo.request.PostCreatedRequest;
 import com.example.postservice.web.vo.request.PostUpdatedRequest;
 import com.example.postservice.web.vo.response.PostResponseVO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -23,12 +24,23 @@ import java.util.List;
 public class PostController {
     @Autowired
     private PostService postService;
+    @Autowired
+    private Environment environment;
     @RequestMapping(value="/api/posts", method = RequestMethod.GET)
     public ResponseEntity<ResponseListData<PostResponseVO>> getPosts() {
         List<PostDTO> postDTOS = postService.getAllPosts();
         List<PostResponseVO> postResponseVOS = PostResponseMapperVO.INSTANCE.fromListPostDTO(postDTOS);
 
         return ResponseHandler.responseWithListData(null, HttpStatus.OK, postResponseVOS, true);
+    }
+    @RequestMapping(value="/api/posts/port", method = RequestMethod.GET)
+    public ResponseEntity<ResponseMessage> getServicePort() {
+        String serverPort = environment.getProperty("local.server.port");
+
+
+        String port =  "I am a REST API in client 2 running on port "+serverPort;
+
+        return ResponseHandler.responseWithMsg(port, HttpStatus.OK, true);
     }
 
     @RequestMapping(value="/api/posts/created", method = RequestMethod.POST)

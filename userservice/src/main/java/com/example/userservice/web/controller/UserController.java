@@ -12,6 +12,7 @@ import com.example.userservice.web.vo.request.UserCreationRequest;
 import com.example.userservice.web.vo.request.UserUpdatedRequest;
 import com.example.userservice.web.vo.response.UserResponseVO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -23,6 +24,8 @@ import java.util.List;
 public class UserController {
     @Autowired
     private UserService userService;
+    @Autowired
+    private Environment environment;
 
     @RequestMapping(value="/api/users", method = RequestMethod.GET)
     public ResponseEntity<ResponseListData<UserResponseVO>> getUserList() {
@@ -31,9 +34,18 @@ public class UserController {
 
         return ResponseHandler.responseWithListData(null, HttpStatus.OK, userResponseVO, true);
     }
+    @RequestMapping(value="/api/users/port", method = RequestMethod.GET)
+    public ResponseEntity<ResponseMessage> getServicePort() {
+        String serverPort = environment.getProperty("local.server.port");
+
+
+        String port =  "I am a REST API in client 2 running on port "+serverPort;
+
+        return ResponseHandler.responseWithMsg(port, HttpStatus.OK, true);
+    }
 
     @RequestMapping(value="/api/users/created", method = RequestMethod.POST)
-    public ResponseEntity<ResponseData<UserResponseVO>> createUser(@Validated  @RequestBody UserCreationRequest creationRequest) {
+    public ResponseEntity<ResponseData<UserResponseVO>> createUser(@Validated @RequestBody UserCreationRequest creationRequest) {
         UserDTO createUser = userService.createUser(UserMapper.INSTANCE.fromUserCreated(creationRequest));
         UserResponseVO userResponseVO = UserResponseMapper.INSTANCE.fromDTO(createUser);
 
