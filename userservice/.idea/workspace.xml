@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb9bf7c4-3931-4c15-8929-f04c6e0f4975" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/event/KafkaEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/core/processor/PostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/config/KafkaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/processor/KafkaProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/logs-2022-08-23-0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/logs-2022-08-24-35.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/logs/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/logs/spring.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/postservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/PostserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/java/com/example/postservice/PostserviceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postservice/postservice/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../postservice/postservice/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/UserserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/UserserviceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/web/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
