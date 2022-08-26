@@ -2,6 +2,7 @@ package com.example.userservice.web.controller;
 
 import com.example.userservice.core.dto.UserDTO;
 import com.example.userservice.core.mapper.UserMapper;
+import com.example.userservice.core.processor.KafkaProcessor;
 import com.example.userservice.core.service.UserService;
 import com.example.userservice.web.handler.ResponseHandler;
 import com.example.userservice.web.handler.response.ResponseData;
@@ -15,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,6 +28,12 @@ public class UserController {
     private UserService userService;
     @Autowired
     private Environment environment;
+    @Autowired
+    private KafkaProcessor processor;
+    @Autowired
+    public UserController(KafkaProcessor processor) {
+        this.processor = processor;
+    }
 
     @RequestMapping(value="/api/users", method = RequestMethod.GET)
     public ResponseEntity<ResponseListData<UserResponseVO>> getUserList() {
@@ -37,8 +45,6 @@ public class UserController {
     @RequestMapping(value="/api/users/port", method = RequestMethod.GET)
     public ResponseEntity<ResponseMessage> getServicePort() {
         String serverPort = environment.getProperty("local.server.port");
-
-
         String port =  "I am a REST API in client 2 running on port "+serverPort;
 
         return ResponseHandler.responseWithMsg(port, HttpStatus.OK, true);
@@ -47,7 +53,18 @@ public class UserController {
     @RequestMapping(value="/api/users/created", method = RequestMethod.POST)
     public ResponseEntity<ResponseData<UserResponseVO>> createUser(@Validated @RequestBody UserCreationRequest creationRequest) {
         UserDTO createUser = userService.createUser(UserMapper.INSTANCE.fromUserCreated(creationRequest));
+
         UserResponseVO userResponseVO = UserResponseMapper.INSTANCE.fromDTO(createUser);
+        processor.approved().send(MessageBuilder.withPayload(createUser).build());
+
+        return ResponseHandler.responseWithData("Create User successfully", HttpStatus.CREATED, userResponseVO, true);
+    }
+    @RequestMapping(value="/api/users/created1", method = RequestMethod.POST)
+    public ResponseEntity<ResponseData<UserResponseVO>> createTestEvent(@Validated @RequestBody UserCreationRequest creationRequest) {
+        UserDTO createUser = userService.createUser(UserMapper.INSTANCE.fromUserCreated(creationRequest));
+
+        UserResponseVO userResponseVO = UserResponseMapper.INSTANCE.fromDTO(createUser);
+        processor.declined().send(MessageBuilder.withPayload(createUser).build());
 
         return ResponseHandler.responseWithData("Create User successfully", HttpStatus.CREATED, userResponseVO, true);
     }
